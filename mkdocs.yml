@@ -1,0 +1,47 @@
+site_name: AutoLFADS Tutorial
+pages:
+  - Introduction: 
+    - Is This Tutorial For You?: index.md
+    - Navigating the Tutorial: navigate.md
+    - Theory: theory.md
+    - Architecture: architecture.md
+    - Additional Info: introductionAddInfo.md
+  - Quick Start:
+    - Quick Start: flowchart.md
+  - First Time Set-up:
+    - Set-up virtual machines: create_infra.md
+    - Set-up storage infrastructure: create_bucket.md
+    - Set-up user: add_user.md
+    - Additional Information: setupAddInfo.md
+  - Run AutoLFADS:
+    - Upload data: data.md
+    - Set-up run parameters: run_params.md
+    - Run AutoLFADS: run_autoLFADS.md
+    - During run: client_tmux.md 
+    - Additional Information: runAddInfo.md
+  - Analysis: 
+    - Analysis: analysis.md
+    - Log Files: log_files.md
+  - Glossary/Common Errors:
+    - Glossary of Parameters: parameters.md
+    - Common Errors: common_errors.md
+theme:
+  favicon: './img/snelogo.png'
+  logo: './img/snelogo.png'
+  name: material
+  features:
+    - navigation.tabs
+  palette:
+    primary: 'green'
+    accent: 'red'
+  extra: 
+    logo: './img/snel.ico'
+markdown_extensions: 
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+extra_css:
+  - 'stylesheets/extra.css'
+  - 'stylesheets/flowchart_style.css'
+extra_javascript:
+  - 'stylesheets/flowchart_script.js'

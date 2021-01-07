@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta:300,400,700');
+
+.flowchart .body {
+  background-color: #fff;
+}
+.flowchart .card {
+  color:#808080;	
+  background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+  width: 100%;
+  transition: max-height 0.2s ease-out;
+}
+.flowchart .card .stepText {
+  padding: 3px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  visibility: hidden;
+}
+
+.flowchart .card .stepContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.flowchart .newUser {
+    position: absolute;
+    padding: 0px 6px;
+    left: 101.5%;
+    white-space: nowrap;
+}
+.flowchart .card .newUser span {
+    color: gray;
+}
+.flowchart .card .stepContainer:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.flowchart .card .stepContainer span {
+  font-size: 20px;
+}
+.flowchart .card .stepContainer span:first-child{
+    background-color: #ffb75e;
+    padding: 0px 3px;
+    width: 257px;
+}
+
+.flowchart .card .stepContainer span:last-child {
+    background-color: #84b59a;
+    padding: 0px 3px;
+    width: 108px;
+    text-align: right;
+}
+.flowchart .card .wait {
+    background-color: #fa655a;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.flowchart .step a {
+    display: block;
+}
+.flowchart .container {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+ }  
+.flowchart {
+  display: flex;
+}
+.flowchart h3 {
+  font-family:'Mukta', sans-serif;
+  color: #05374f;
+}
+.flowchart p {
+  font-family: 'Mukta', sans-serif;
+  color: black;
+  margin: 0.5px;
+}
+.flowchart span {
+  font-family:'Mukta', sans-serif;
+  color: #fff;
+}
+.flowchart img {
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+.preRed {
+border-left: 2px solid red;
+}
+.preBlue {
+border-left: 2px solid blue;
+}
