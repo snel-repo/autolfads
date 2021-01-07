@@ -1,0 +1,1082 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../img/snelogo.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+    
+    
+      
+        <title>Set-up virtual machines - AutoLFADS Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/flowchart_style.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="red">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tutorial-package" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="AutoLFADS Tutorial" class="md-header-nav__button md-logo" aria-label="AutoLFADS Tutorial">
+      
+  <img src="../img/snelogo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            AutoLFADS Tutorial
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Set-up virtual machines
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        Introduction
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../flowchart/" class="md-tabs__link">
+        Quick Start
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        First Time Set-up
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../data/" class="md-tabs__link">
+        Run AutoLFADS
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../analysis/" class="md-tabs__link">
+        Analysis
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../parameters/" class="md-tabs__link">
+        Glossary/Common Errors
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AutoLFADS Tutorial" class="md-nav__button md-logo" aria-label="AutoLFADS Tutorial">
+      
+  <img src="../img/snelogo.png" alt="logo">
+
+    </a>
+    AutoLFADS Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" >
+    
+    <label class="md-nav__link" for="nav-1">
+      Introduction
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
+        Introduction
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Is This Tutorial For You?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../navigate/" class="md-nav__link">
+      Navigating the Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../theory/" class="md-nav__link">
+      Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../architecture/" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../introductionAddInfo/" class="md-nav__link">
+      Additional Info
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    
+    <label class="md-nav__link" for="nav-2">
+      Quick Start
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Quick Start" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Quick Start
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../flowchart/" class="md-nav__link">
+      Quick Start
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      First Time Set-up
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="First Time Set-up" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        First Time Set-up
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Set-up virtual machines
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Set-up virtual machines
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tutorial-package" class="md-nav__link">
+    Tutorial package
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-and-configure-the-google-cloud-project" class="md-nav__link">
+    Create and configure the google cloud project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requesting-additional-gpu-quota" class="md-nav__link">
+    Requesting additional GPU quota
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-server-vm" class="md-nav__link">
+    Creating Server VM 
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Server VM ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-server-vm-walkthrough" class="md-nav__link">
+    Create Server VM Walkthrough
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-client-machines" class="md-nav__link">
+    Create the client machines 
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the client machines ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-the-client-machines-walkthrough" class="md-nav__link">
+    Create the client machines walkthrough
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-if-docker-is-successfully-installed" class="md-nav__link">
+    Check if Docker is successfully installed
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../create_bucket/" class="md-nav__link">
+      Set-up storage infrastructure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../add_user/" class="md-nav__link">
+      Set-up user
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../setupAddInfo/" class="md-nav__link">
+      Additional Information
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      Run AutoLFADS
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Run AutoLFADS" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Run AutoLFADS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../data/" class="md-nav__link">
+      Upload data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../run_params/" class="md-nav__link">
+      Set-up run parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../run_autoLFADS/" class="md-nav__link">
+      Run AutoLFADS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../client_tmux/" class="md-nav__link">
+      During run
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../runAddInfo/" class="md-nav__link">
+      Additional Information
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    
+    <label class="md-nav__link" for="nav-5">
+      Analysis
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Analysis" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../analysis/" class="md-nav__link">
+      Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../log_files/" class="md-nav__link">
+      Log Files
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+    
+    <label class="md-nav__link" for="nav-6">
+      Glossary/Common Errors
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Glossary/Common Errors" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Glossary/Common Errors
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../parameters/" class="md-nav__link">
+      Glossary of Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../common_errors/" class="md-nav__link">
+      Common Errors
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tutorial-package" class="md-nav__link">
+    Tutorial package
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-and-configure-the-google-cloud-project" class="md-nav__link">
+    Create and configure the google cloud project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requesting-additional-gpu-quota" class="md-nav__link">
+    Requesting additional GPU quota
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-server-vm" class="md-nav__link">
+    Creating Server VM 
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Server VM ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-server-vm-walkthrough" class="md-nav__link">
+    Create Server VM Walkthrough
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-client-machines" class="md-nav__link">
+    Create the client machines 
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the client machines ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-the-client-machines-walkthrough" class="md-nav__link">
+    Create the client machines walkthrough
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-if-docker-is-successfully-installed" class="md-nav__link">
+    Check if Docker is successfully installed
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Set-up virtual machines</h1>
+                
+                <div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Estimated time for section: <strong>45 minutes</strong></p>
+</div>
+<p>The following section details how to set-up cloud infrastructure on GCP. </p>
+<p><strong>These steps need to be completed once per PROJECT.</strong> </p>
+<ol>
+<li>Set-up virtual machines</li>
+<li>Set-up storage infrastructure</li>
+</ol>
+<p><strong>This step needs to be completed once per USER.</strong> That is, if a team is working on a project, each individual member with a Google Account has to execute the steps listed below.</p>
+<ol>
+<li>Set-up user</li>
+</ol>
+<h2 id="tutorial-package">Tutorial package</h2>
+<p>This tutorial has a package that contains several scripts and a synthetic dataset useful for this tutorial. Note that depending on your specific needs, not every file in this package needs to be used.</p>
+<p>Download the tutorial package <a href="../files/tutorial_package.zip">here</a>.</p>
+<h2 id="create-and-configure-the-google-cloud-project">Create and configure the google cloud project</h2>
+<p>This first step creates your project in Google Cloud Platform. This step only needs to be done once.</p>
+<p>Go to <a href="https://cloud.google.com/">https://cloud.google.com/</a> and sign in with your Google account.</p>
+<p>If this is your first time logging into Google Cloud Platform, first we need to create a project. Navigate to the <a href="https://console.cloud.google.com/compute">console.cloud.google.com/compute</a> and then fill out the details needed to create a project.</p>
+<p>Next, you have to link your account to a billing account by entering a credit card. Navigate back to the dashboard at <a href="https://console.cloud.google.com/home">console.cloud.google.com/home</a> and then click 'Billing,' located on the right side. Here you can add a method to pay for GPUs.</p>
+<h2 id="requesting-additional-gpu-quota">Requesting additional GPU quota</h2>
+<p>Compute Engine enforces quota to prevent unforseen spikes in GPU usage. The quota enforces an upper bound on how many GPUs can be created in each zone. Thus, you must make sure your quota allows you to have enough GPUs to run your client machines, and if not, request additional quota. Google may take up to 48 hours to allocate quota (although generally much faster than this), so it is recommended to request additional quota well before planning to begin a run.</p>
+<p>Generally, we need to increase our quota of 1) # of GPUs, 2) # of global GPUs, and 3) # of global CPUs.</p>
+<p>In order to request quota, navigate to <a href="https://console.cloud.google.com/iam-admin/quotas">https://console.cloud.google.com/iam-admin/quotas</a>, open up the 'Metric' drop down menu, de-select all by clicking 'none.' </p>
+<p>First, scroll down to find an appropriate GPU that you will be attaching to your virtual machines. The user can choose any GPU that suits their purpose; the default one used in this tutorial is NVIDIA K80 GPU. Note, the selected GPU works well as 'normal' type, not 'committed' (higher costs) or 'preemptible' (short-lived VMs). </p>
+<p>Select the chosen GPU, and then scroll down to the specific region you want to increase quota in. Once you select it, click the 'Edit Quotas,' and fill in the information.</p>
+<p>To follow this tutorial exactly, you need at least 4 NVIDA K80 GPUs in us-central1-c, and 4 NVIDIA K80 GPUs in us-east1-c.</p>
+<video width="100%" height="auto" controls loop>
+  <source src="../media/autoLFADS/quota.mp4" type="video/mp4">
+</video>
+
+<p>Next, we want to increase the number of global GPUs. You can deselect all <code>metrics</code> again, and then find <code>GPUs (all regions)</code>. To follow this tutorial exactly, click <code>edit quota</code> and increase this to 8 (or greater). On certain GCP accounts, this global GPU metric may not show up and if so, this specific quota can be ignored. </p>
+<p><img alt="gpus" src="../img/GPUs_all_regions.png" /></p>
+<p>Finally, we want to increase the number of global CPUs. You can deselect all <code>metrics</code> again, and then find <code>CPUs (all regions)</code>. To follow this tutorial exactly, click <code>edit quota</code> and increase this to 64 (or greater). On certain GCP accounts, this global CPU metric may not show up and if so, this specific quota can be ignored. </p>
+<p><img alt="cpus" src="../img/CPUs_all_regions.png" /></p>
+<h2 id="creating-server-vm">Creating Server VM <a href="https://cpandar.github.io/lfads-pbt/create_infra/#create-server-vm-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a></h2>
+<p>Once the project is created, we must create a server VM. To do so, first navigate back to the compute engine at <a href="https://console.cloud.google.com/compute">console.cloud.google.com/compute</a>. Then, we want to open the cloud shell by clicking the 'Activate Cloud Shell' button in the top right. </p>
+<p><img alt="Activate Cloud Shell" src="../img/activate_cloud_shell.png" /></p>
+<p>Inside the shell of the gcloud project, we want to clone the SNEL repository. This has the collection of scripts which we will be using to create and set-up the server and client VMs and also to start PBT.</p>
+<pre><code>git clone https://github.com/snel-repo/autoLFADS-beta.git
+</code></pre>
+<p>Now, we want to navigate to the gcloud_scripts directory inside this repository. We can type the following command into our cloud shell to navigate to this directory. </p>
+<pre><code>cd autoLFADS-beta/gcloud_scripts
+</code></pre>
+<p>Next, we want to run the server_set_up.sh script, which has the following format: </p>
+<p><code>sh server_set_up.sh &lt;server_name&gt; &lt;zone&gt;</code></p>
+<p>Server_name is the name of the server we create, and can be any lowercase alphanumeric characters. Zone is the region where your server is stored and used; best is usually the zone closest to you (list of zones can be found here: <a href="https://cloud.google.com/compute/docs/regions-zones/#available">https://cloud.google.com/compute/docs/regions-zones/#available</a>)</p>
+<p>In this tutorial, we'll create a server named 'tutserver' and in the zone 'us-central1-c'. We will thus execute the following command in the cloud shell.</p>
+<pre><code>sh server_set_up.sh tutserver us-central1-c
+</code></pre>
+<p>This step will take a couple minutes to run. You will know its complete when a server is seen in list of VMs and the compute engine shows the following.</p>
+<p><img alt="server created" src="../img/server_creation.PNG" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Active VMs can rack up costs when left unattended. Remember to shut them down when not in use. For information on how to stop, pause, and start VMs, go to this <a href="../setupAddInfo/#stopping-starting-vms">section</a>.</p>
+</div>
+<h3 id="create-server-vm-walkthrough">Create Server VM Walkthrough</h3>
+<video width="100%" height="auto" controls loop>
+  <source src="../media/autoLFADS/server_setup.mp4" type="video/mp4">
+</video>
+
+<p>If for some reason the server VM doesn't seem to have been correctly created, check the <a href="../common_errors">common errors</a> section for debugging help.</p>
+<h2 id="create-the-client-machines">Create the client machines <a href="https://cpandar.github.io/lfads-pbt/create_infra/#create-the-client-machines-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a></h2>
+<p>After creating the server machines, we next want to create the client machines. To do so, first make sure you have the cloud shell still opened and inside the directory <code>autoLFADS-beta/gcloud_scripts</code>.</p>
+<p>To create the client machines, we want to pass in parameters into the following command: </p>
+<p><code>sh machine_setup.sh &lt;client_name&gt; &lt;number_of_clients&gt; &lt;zone&gt; &lt;name_of_GPU&gt;</code></p>
+<p>Client name is any lowercase alphanumeric characters naming the client, number_of_clients is how many client machines are created, and zone is the location the clients will be stored in.</p>
+<p>In order to decide how many clients to be created for your specific dataset, refer to <a href="../setupAddInfo/#choosing-number-of-clients">additional information</a>. Remember that the number of client machines is limited by your GPU quota in a particular zone, that is, your max number of GPUs in a zone is the max number of client machines you can create there .</p>
+<p>The argument <name_of_gpu> only needs to be passed in if you are using a GPU that is not the default NVIDIA K80 GPU, and is the full name of the GPU without in lowercase with spaces replaced with dashes (for instance, <code>nvidia-tesla-v100</code>).  </p>
+<p>In this tutorial, we will create 8 clients dispersed over two zones, as not to not exceed quota limits. Since we are using the NVIDIA K80 GPU we omit the <code>&lt;name_of_GPU&gt;</code> argument. To create these client machines in two zones, we run the following two lines of code consecutively. </p>
+<pre><code>sh machine_setup.sh tutclientc 4 us-central1-c
+</code></pre>
+<p>Once control of cloud shell is returned back:</p>
+<pre><code>sh machine_setup.sh tutcliente 4 us-east1-c
+</code></pre>
+<h3 id="create-the-client-machines-walkthrough">Create the client machines walkthrough</h3>
+<video width="100%" height="auto" controls loop>
+  <source src="../media/autoLFADS/machine_setup.mp4" type="video/mp4">
+</video>
+
+<h2 id="check-if-docker-is-successfully-installed">Check if Docker is successfully installed</h2>
+<p>Creating the clinet machines will take several minutes to run, and then an additional 10 or so minutes for the client machines to finish pulling the Docker image. Note that the creation of the client machines being finished is NOT indicated by control of Cloud Shell being returned or by there simply being a green checkmark next to the VMs; you must wait until the Docker image has been pulled on each machine.</p>
+<p>In order to see if the client machines have finished pulling the Docker image, run the following command in cloud shell.</p>
+<pre><code>sh check.sh pbtclient
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>pbtclient</code> is the tagname, that is, a shorthand name for all client VMs in all zones. Commands that involve all client VMs at the same time, such as in the AutoLFADS python script and in check.sh, use <code>pbtclient</code> as the common client name. </p>
+</div>
+<p>If the client machines are completely finished installing, then every client machine should return a <code>Docker Installed on &lt;client_name&gt;</code></p>
+<p>Once all the machines have Docker properly installed, this marks the end of creating necessary VMs. </p>
+<video width="100%" height="auto" controls loop>
+  <source src="../media/autoLFADS/check.mp4" type="video/mp4">
+</video>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../flowchart/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Quick Start
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../create_bucket/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Set-up storage infrastructure
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.tabs'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../stylesheets/flowchart_script.js"></script>
+      
+    
+  </body>
+</html>
