@@ -1,0 +1,9 @@
+.DS_Store
+.DS_Store?
+*.pyc
+*.js
+*.*~
+<<<<<<< HEAD
+=======
+._*
+>>>>>>> efd09f124d40b00fc61d9f922f31da5130767c39
