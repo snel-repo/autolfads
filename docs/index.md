@@ -5,7 +5,7 @@ This tutorial is a programming-beginner friendly, step-by-step walkthrough on ap
 
 ## Quick introduction
 
-AutoLFADS is the combination of Latent Factor Analysis via Dynamical Systems (LFADS), a deep learning method to infer latent dynamics from single-trial neural population data, with Population Based Training(PBT), an automatic hyperparameter tuning framework. 
+AutoLFADS is the combination of Latent Factor Analysis via Dynamical Systems (LFADS), a deep learning method to infer latent dynamics from single-trial neural population data, with Population Based Training (PBT), an automatic hyperparameter tuning framework. 
 
 Specifically, this tutorial focuses on running AutoLFADS on Google Cloud Platform (GCP), which allows the use of AutoLFADS using computational resources available for rent on the cloud. Thus, as long as the user has access to GCP and the ability to pay for the usage of GPUs, then this tutorial can be used to apply AutoLFADS to neural population data without any need for local hardware.  
 
