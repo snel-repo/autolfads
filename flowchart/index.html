@@ -769,7 +769,7 @@
       <div class="stepText">
         <p><a href="https://snel-repo.github.io/autolfads/create_infra/#creating-server-vm"><strong>2.1: </strong></a>Clone SNEL repository into cloud shell</p>
        <div class="newUser"><span>(Code in red border should be executed in cloud shell)</span></div>
-       <pre class="preRed"><code>git clone https://github.com/snel-repo/autoLFADS-beta.git
+       <pre class="preRed"><code>git clone -b GCP https://github.com/snel-repo/autolfads.git
 </code></pre>
        <p><a href="https://snel-repo.github.io/autolfads/create_infra/#creating-server-vm"><strong>2.2: </strong></a>Create server machine</p>
         <pre class="preRed"><code> sh server_set_up.sh tutserver us-central1-c
@@ -804,7 +804,7 @@
 </code></pre>
         <p><a href="https://snel-repo.github.io/autolfads/add_user/#pull-autolfads-code-onto-server-vm"><strong>3.2: </strong></a>Clone SNEL repository on server</p>
         <div class="newUser"><span>(Code with blue border should be executed in server shell)</span></div>
-        <pre class="preBlue"><code> git clone https://github.com/snel-repo/autoLFADS-beta.git
+        <pre class="preBlue"><code> git clone -b GCP https://github.com/snel-repo/autolfads.git
 </code></pre>
       </div>
     </div>
