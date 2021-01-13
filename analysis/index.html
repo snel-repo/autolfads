@@ -811,15 +811,15 @@
 <p>Estimated time for section: <strong>30 min</strong></p>
 </div>
 <p>The following section details downloading the results from Google Cloud, and then running several analysis scripts.</p>
-<h2 id="downloading-data-from-gcp">Downloading Data From GCP <a href="https://cpandar.github.io/lfads-pbt/analysis/#download-data-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a></h2>
+<h2 id="downloading-data-from-gcp">Downloading Data From GCP <a href="https://snel-repo.github.io/autolfads/analysis/#download-data-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a></h2>
 <p>Once LFADS w/ PBT has finished running, we can now download the data back to our local computer for analysis.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>At this point, you can stop all your machines (server and clients). Information on stopping machines can be found <a href="https://cpandar.github.io/lfads-pbt/setupAddInfo/#stopping-starting-vms">here</a> </p>
+<p>At this point, you can stop all your machines (server and clients). Information on stopping machines can be found <a href="https://snel-repo.github.io/autolfads/setupAddInfo/#stopping-starting-vms">here</a> </p>
 </div>
 <p>To download data from the bucket, navigate back to <a href="https://console.cloud.google.com/storage">https://console.cloud.google.com/storage</a>.</p>
 <p>Click on the newly created zip file, and then click 'Download.' The output of the run should now be downloaded to your local computer.</p>
-<h2 id="post-processing">Post Processing <a href="https://cpandar.github.io/lfads-pbt/analysis/#post-process-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a></h2>
+<h2 id="post-processing">Post Processing <a href="https://snel-repo.github.io/autolfads/analysis/#post-process-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a></h2>
 <p>Now that you have downloaded the data back to your local computer, open up the tutorial package (<a href="../files/tutorial_package.zip">download here</a>)</p>
 <p>Open up <code>pbt_plot.m</code> in Matlab. First, set the tutorial_package to your current working folder. </p>
 <p>Then, inside the <code>pbt_plot.m</code> script, we need to set the <code>data_folder</code> variable to the location of your <code>pbt_run</code> folder, which is located inside the <code>run</code> folder you downloaded. For instance, on my computer its <code>C:\\Users\tutorial\output\runs\pbt_run</code>.</p>

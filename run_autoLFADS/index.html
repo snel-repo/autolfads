@@ -823,15 +823,15 @@
 <p class="admonition-title">Warning</p>
 <p>Note that if you are doing an additional run, make sure that the folder you set your <code>run_path</code> to is completely empty. Also if you have a .zip file in your bucket named the same as your <code>run_path</code>, you must delete it before starting a new run.  </p>
 </div>
-<h2 id="beginning-autolfads-in-tmux">Beginning AutoLFADS in tmux <a href=https://cpandar.github.io/lfads-pbt/run_autoLFADS/#walkthrough><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a></h2>
-<p>First, make sure you're SSHed into your server VM. Then, make sure you're in the directory <code>autoLFADS-beta/pbt_opt</code> directory. If not, you can navigate with the following command:</p>
-<pre><code>cd autoLFADS-beta/pbt_opt
+<h2 id="beginning-autolfads-in-tmux">Beginning AutoLFADS in tmux <a href=https://snel-repo.github.io/autolfads/run_autoLFADS/#walkthrough><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a></h2>
+<p>First, make sure you're SSHed into your server VM. Then, make sure you're in the directory <code>autolfads/pbt_opt</code> directory. If not, you can navigate with the following command:</p>
+<pre><code>cd autolfads/pbt_opt
 </code></pre>
 <p>Then, we want to make sure to begin our run in a tmux terminal. This allows us to exit from the SSH terminal without terminating our run.</p>
 <p>First, type the following command into your SSH window (NOT cloud shell). </p>
 <pre><code>tmux
 </code></pre>
-<p>Then, making sure you're still in the <code>autoLFADS-beta/pbt_opt</code> directory, run the following command to begin your AutoLFADS run.</p>
+<p>Then, making sure you're still in the <code>autolfads/pbt_opt</code> directory, run the following command to begin your AutoLFADS run.</p>
 <pre><code>python2 pbt_script_multiVM.py
 </code></pre>
 <p>Your run should begin. If any errors pop-up, double check that the Docker images are finished pulling on the client machines with <code>sh check.sh</code>, and that mongoDB is running with <code>service mongod status</code>. If prompted for an SSH keygen, just hit <code>enter</code> to accept the default keygen. </p>
