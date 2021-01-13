@@ -1,6 +1,6 @@
 In this step, we add users to a Docker group in order to avoid prefacing docker commands with `sudo`. This step needs to be performed once per individual Google Account using AutoLFADS, before they start a run.
 
-##Adding user to docker group <a href="https://cpandar.github.io/lfads-pbt/add_user/#adding-user-to-docker-group-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
+##Adding user to docker group <a href="https://snel-repo.github.io/autolfads/add_user/#adding-user-to-docker-group-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
 
 First, navigate back to the [compute engine](https://console.cloud.google.com/compute) and make sure the 'cloud shell' is open (button in the top right corner).
 
@@ -22,7 +22,7 @@ For this tutorial, the command would be
   <source src="../media/autoLFADS/add_docker_user.mp4" type="video/mp4">
 </video>
 
-##Pull AutoLFADS code onto server VM<a href="https://cpandar.github.io/lfads-pbt/create_infra/#server-pull-code-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
+##Pull AutoLFADS code onto server VM<a href="https://snel-repo.github.io/autolfads/create_infra/#server-pull-code-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
 
 Next, we want to directly enter the server VM and copy the AutoLFADS code. In order to enter the server VM, we need to SSH in. First, make sure you're at the compute engine ([console.cloud.google.com/compute](https://console.cloud.google.com/compute)) and can see your list of created VMs. Once you find your server you created (in this tutorial, its named tutserver), click on the button to the right of it labeled 'SSH'.
 
@@ -34,7 +34,7 @@ You have now SSHed into your server client. Now, inside this newly opened SSH br
 
 Run the following command in the SSH window.
 
-    git clone https://github.com/snel-repo/autoLFADS-beta.git
+    git clone -b GCP https://github.com/snel-repo/autolfads.git
 
 Now, the server VM should contain the necessary code. 
 

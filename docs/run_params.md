@@ -1,7 +1,7 @@
 This step involves modifying the AutoLFADS python script to link to your VMs and bucket. Note that prior to this step, [cloud infrastructure](../create_infra) must be created already, the code must be [cloned inside the server VM](../add_user/#pull-autolfads-code-onto-server-vm), the user must be added to [docker group](../add_user), and the bucket must be [created](../create_bucket) and data [uploaded](../data) to it.
 
 
-##Linking AutoLFADS script to your data <a href=https://cpandar.github.io/lfads-pbt/run_autoLFADS/#walkthrough><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
+##Linking AutoLFADS script to your data <a href=https://snel-repo.github.io/autolfads/run_params/><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
 
 First, make sure you are SSHed back into your server VM. 
 

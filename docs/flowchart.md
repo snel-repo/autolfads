@@ -10,7 +10,7 @@ The following quick start guide offers a general pipeline for the steps of runni
       </div>
       <div class="stepContainer">
         <span>STEP 1 - Set Up Project</span>
-        <img src="https://raw.githubusercontent.com/dbasrai/dbasrai.github.io/master/darrow-1.png" width=10px; height=10px;></img>
+        <img src="https://raw.githubusercontent.com/snel-repo/autolfads/tutorial/docs/img/darrow_updated.png" width=10px; height=10px;></img>
         <span>10 Minutes</span>
       </div>
       <div class="stepText">
@@ -25,13 +25,13 @@ The following quick start guide offers a general pipeline for the steps of runni
     <div class="card">
       <div class="stepContainer">
         <span>STEP 2 - Set-up Infrastructure</span>
-        <img src="https://raw.githubusercontent.com/dbasrai/dbasrai.github.io/master/darrow-1.png" width=10px; height=10px;></img>
+        <img src="https://raw.githubusercontent.com/snel-repo/autolfads/tutorial/docs/img/darrow_updated.png" width=10px; height=10px;></img>
         <span>45 Minutes</span>
       </div>
       <div class="stepText">
         <p><a href="https://snel-repo.github.io/autolfads/create_infra/#creating-server-vm"><strong>2.1: </strong></a>Clone SNEL repository into cloud shell</p>
        <div class="newUser"><span>(Code in red border should be executed in cloud shell)</span></div>
-       <pre class="preRed"><code>git clone https://github.com/snel-repo/autoLFADS-beta.git
+       <pre class="preRed"><code>git clone -b GCP https://github.com/snel-repo/autolfads.git
 </code></pre>
        <p><a href="https://snel-repo.github.io/autolfads/create_infra/#creating-server-vm"><strong>2.2: </strong></a>Create server machine</p>
         <pre class="preRed"><code> sh server_set_up.sh tutserver us-central1-c
@@ -56,7 +56,7 @@ The following quick start guide offers a general pipeline for the steps of runni
       </div>
       <div class="stepContainer">
         <span>STEP 3 - Add User</span>
-        <img src="https://raw.githubusercontent.com/dbasrai/dbasrai.github.io/master/darrow-1.png" width=10px; height=10px;></img>
+        <img src="https://raw.githubusercontent.com/snel-repo/autolfads/tutorial/docs/img/darrow_updated.png" width=10px; height=10px;></img>
         <span>5 Minutes</span>
       </div>
       <div class="stepText">
@@ -66,7 +66,7 @@ The following quick start guide offers a general pipeline for the steps of runni
 </code></pre>
         <p><a href="https://snel-repo.github.io/autolfads/add_user/#pull-autolfads-code-onto-server-vm"><strong>3.2: </strong></a>Clone SNEL repository on server</p>
         <div class="newUser"><span>(Code with blue border should be executed in server shell)</span></div>
-        <pre class="preBlue"><code> git clone https://github.com/snel-repo/autoLFADS-beta.git
+        <pre class="preBlue"><code>git clone -b GCP https://github.com/snel-repo/autolfads.git
 </code></pre>
       </div>
     </div>
@@ -77,7 +77,7 @@ The following quick start guide offers a general pipeline for the steps of runni
       </div>
       <div class="stepContainer">
         <span>STEP 4 - Upload Data</span>
-        <img src="https://raw.githubusercontent.com/dbasrai/dbasrai.github.io/master/darrow-1.png" width=10px; height=10px;></img>
+        <img src="https://raw.githubusercontent.com/snel-repo/autolfads/tutorial/docs/img/darrow_updated.png" width=10px; height=10px;></img>
         <span>5 Minutes</span>
       </div>
       <div class="stepText">
@@ -91,7 +91,7 @@ The following quick start guide offers a general pipeline for the steps of runni
       </div>
       <div class="stepContainer">
         <span>STEP 5 - Start Run</span>
-        <img src="https://raw.githubusercontent.com/dbasrai/dbasrai.github.io/master/darrow-1.png" width=10px; height=10px;></img>
+        <img src="https://raw.githubusercontent.com/snel-repo/autolfads/tutorial/docs/img/darrow_updated.png" width=10px; height=10px;></img>
         <span>10 Minutes</span>
       </div>
       <div class="stepText">
@@ -110,7 +110,7 @@ The following quick start guide offers a general pipeline for the steps of runni
     <div class="card">
       <div class="stepContainer">
         <span>STEP 6 - Analyze Output</span>
-        <img src="https://raw.githubusercontent.com/dbasrai/dbasrai.github.io/master/darrow-1.png" width=10px; height=10px;></img>
+        <img src="https://raw.githubusercontent.com/snel-repo/autolfads/tutorial/docs/img/darrow_updated.png" width=10px; height=10px;></img>
         <span>30 Minutes</span>
       </div>
       <div class="stepText">

@@ -52,7 +52,7 @@ Finally, we want to increase the number of global CPUs. You can deselect all `me
  
 ![cpus](img/CPUs_all_regions.png)
 
-## Creating Server VM <a href="https://cpandar.github.io/lfads-pbt/create_infra/#create-server-vm-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
+## Creating Server VM <a href="https://snel-repo.github.io/autolfads/create_infra/#create-server-vm-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
 
 Once the project is created, we must create a server VM. To do so, first navigate back to the compute engine at [console.cloud.google.com/compute](https://console.cloud.google.com/compute). Then, we want to open the cloud shell by clicking the 'Activate Cloud Shell' button in the top right. 
 
@@ -60,11 +60,11 @@ Once the project is created, we must create a server VM. To do so, first navigat
    
 Inside the shell of the gcloud project, we want to clone the SNEL repository. This has the collection of scripts which we will be using to create and set-up the server and client VMs and also to start PBT.
    
-    git clone https://github.com/snel-repo/autoLFADS-beta.git
+    git clone -b GCP https://github.com/snel-repo/autolfads.git
    
 Now, we want to navigate to the gcloud_scripts directory inside this repository. We can type the following command into our cloud shell to navigate to this directory. 
    
-    cd autoLFADS-beta/gcloud_scripts 
+    cd autolfads/gcloud_scripts 
 
 Next, we want to run the server_set_up.sh script, which has the following format: 
 
@@ -90,9 +90,9 @@ This step will take a couple minutes to run. You will know its complete when a s
 
 If for some reason the server VM doesn't seem to have been correctly created, check the [common errors](../common_errors) section for debugging help.
 
-## Create the client machines <a href="https://cpandar.github.io/lfads-pbt/create_infra/#create-the-client-machines-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
+## Create the client machines <a href="https://snel-repo.github.io/autolfads/create_infra/#create-the-client-machines-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
 
-After creating the server machines, we next want to create the client machines. To do so, first make sure you have the cloud shell still opened and inside the directory `autoLFADS-beta/gcloud_scripts`.
+After creating the server machines, we next want to create the client machines. To do so, first make sure you have the cloud shell still opened and inside the directory `autolfads/gcloud_scripts`.
 
 To create the client machines, we want to pass in parameters into the following command: 
 

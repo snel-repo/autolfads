@@ -739,7 +739,7 @@
                 
                 
                 <h1 id="server-set-up-error">Server Set-up error</h1>
-<p>Several failures in the pipeline can be attributed to failure in server creation, which is done in the <code>sh server_set_up.sh</code> step. If the Python script fails to run, its likely worth first attempting to <a href="https://cpandar.github.io/lfads-pbt/setupAddInfo/#stopping-starting-vms">delete the server machine</a>, and then re-run your server_set_up.sh script. After running the server_set_up.sh script, some of the last few lines of generated output should specify that the user has successfully been added to the MongoDB group, as seen in the below screenshot. </p>
+<p>Several failures in the pipeline can be attributed to failure in server creation, which is done in the <code>sh server_set_up.sh</code> step. If the Python script fails to run, its likely worth first attempting to <a href="https://snel-repo.github.io/autolfads/setupAddInfo/#stopping-starting-vms">delete the server machine</a>, and then re-run your server_set_up.sh script. After running the server_set_up.sh script, some of the last few lines of generated output should specify that the user has successfully been added to the MongoDB group, as seen in the below screenshot. </p>
 <p><img alt="" src="../img/mongo_confirm.png" /></p>
 <p>If this isn't seen, likely MongoDB is failing to be set-up properly on the server machine. This can be checked by SSHing into the server machine and then running <code>sudo service mongod status</code>.</p>
 <h1 id="connection-refused">Connection refused</h1>

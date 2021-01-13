@@ -4,17 +4,17 @@
 
 The following section details downloading the results from Google Cloud, and then running several analysis scripts.
 
-##Downloading Data From GCP <a href="https://cpandar.github.io/lfads-pbt/analysis/#download-data-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
+##Downloading Data From GCP
 Once LFADS w/ PBT has finished running, we can now download the data back to our local computer for analysis.
 
 !!! warning
-    At this point, you can stop all your machines (server and clients). Information on stopping machines can be found [here](https://cpandar.github.io/lfads-pbt/setupAddInfo/#stopping-starting-vms) 
+    At this point, you can stop all your machines (server and clients). Information on stopping machines can be found [here](https://snel-repo.github.io/autolfads/setupAddInfo/#stopping-starting-vms) 
 
 To download data from the bucket, navigate back to [https://console.cloud.google.com/storage](https://console.cloud.google.com/storage).
 
 Click on the newly created zip file, and then click 'Download.' The output of the run should now be downloaded to your local computer.
 
-##Post Processing <a href="https://cpandar.github.io/lfads-pbt/analysis/#post-process-walkthrough"><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
+##Post Processing 
 Now that you have downloaded the data back to your local computer, open up the tutorial package ([download here](files/tutorial_package.zip))
 
 Open up `pbt_plot.m` in Matlab. First, set the tutorial_package to your current working folder. 

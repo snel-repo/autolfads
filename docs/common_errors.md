@@ -1,5 +1,5 @@
 #Server Set-up error
-Several failures in the pipeline can be attributed to failure in server creation, which is done in the `sh server_set_up.sh` step. If the Python script fails to run, its likely worth first attempting to [delete the server machine](https://cpandar.github.io/lfads-pbt/setupAddInfo/#stopping-starting-vms), and then re-run your server_set_up.sh script. After running the server_set_up.sh script, some of the last few lines of generated output should specify that the user has successfully been added to the MongoDB group, as seen in the below screenshot. 
+Several failures in the pipeline can be attributed to failure in server creation, which is done in the `sh server_set_up.sh` step. If the Python script fails to run, its likely worth first attempting to [delete the server machine](https://snel-repo.github.io/autolfads/setupAddInfo/#stopping-starting-vms), and then re-run your server_set_up.sh script. After running the server_set_up.sh script, some of the last few lines of generated output should specify that the user has successfully been added to the MongoDB group, as seen in the below screenshot. 
 
 ![](img/mongo_confirm.png)
 

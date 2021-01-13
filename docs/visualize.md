@@ -1,3 +1,0 @@
-While the run is going, here's how you visualize...
-* HP evolution
-* Other training graphs
