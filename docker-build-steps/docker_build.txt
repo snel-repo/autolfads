@@ -1,0 +1,7 @@
+1. Create a directory in which you clone the cloud branches of the lfadslite and PBT repo
+2. In the same directory, place the Dockerfile
+3. If you want to create the image with the same name then remove the previous version of the image  - "sudo docker rmi -f d68342b9ba87" (The alpha-numeric code is the image id which can be looked up by "sudo docker image ls")
+4. Build the new image - "sudo docker build -t autolfads ." autolfads is the image name but it could be anything
+5. Login into the docker account (I can share the credentials if you don't have them already but I think it should be on lab wiki) -  "sudo docker login"
+6. Tag the new image "sudo docker tag e355503d7ac0 snelbeta/autolfads:some_id". The new image will have an id (e355503d7ac0) which can be checked from the printed details. Another way to check the image details is by using "sudo docker image ls"
+7. Push the docker image - "sudo docker push snelbeta/autolfads"
