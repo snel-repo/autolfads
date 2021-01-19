@@ -6,7 +6,7 @@ If you are re-using client machines created some time ago, there is a chance tha
 
 1) First, make sure all client machines are started (have a green check next to them). 
 
-2) Open up Cloud Shell and then navigate to `autoLFADS-beta/gclouds_scripts` directory and run the following command.
+2) Open up Cloud Shell and then navigate to `autolfads/gclouds_scripts` directory and run the following command.
 
     sh update_docker_image.sh
 

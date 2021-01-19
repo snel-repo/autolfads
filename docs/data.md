@@ -26,7 +26,7 @@ Simply open up the script, point the `data` field toward your .mat file and edit
 
 ##Uploading Data
 
-Next, navigate back to [console.cloud.google.com/storage](https://console.cloud.google.com/storage), click on the bucket you [created](../create_bucket), and then navigate to your "data" folder. Then, upload your .h5 file here either by clicking upload file or by dragging and dropping. The .h5 file must be renamed to have the prefix specified by the `data_file_namestem` parameter in the `pbt_script_multiVM.py` file located in `autoLFADS_beta/pbt_opt` directory of the SNEL repo. The default prefix is `lfads`, thus, in this tutorial we'll upload our data named lfads_data.h5.
+Next, navigate back to [console.cloud.google.com/storage](https://console.cloud.google.com/storage), click on the bucket you [created](../create_bucket), and then navigate to your "data" folder. Then, upload your .h5 file here either by clicking upload file or by dragging and dropping. The .h5 file must be renamed to have the prefix specified by the `data_file_namestem` parameter in the `pbt_script_multiVM.py` file located in `autolfads/pbt_opt` directory of the SNEL repo. The default prefix is `lfads`, thus, in this tutorial we'll upload our data named lfads_data.h5.
 
 Our data folder in our bucket should now look like this with the data uploaded.
 
