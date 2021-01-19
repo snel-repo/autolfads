@@ -9,11 +9,11 @@ First, make sure you are SSHed back into your server VM.
   <source src="../media/browserwindowupdate.mp4" type="video/mp4">
 </video>
 
-Then, (inside the SSH window), navigate to the `autoLFADS-beta/pbt_opt` directory with the following command.
+Then, (inside the SSH window), navigate to the `autolfads/pbt_opt` directory with the following command.
 
     cd autolfads/pbt_opt
 
-Next, we want to edit `pbt_script_multiVM.py`, the AutoLFADS run script, to link it to our data. Still inside the SSH window and inside the `autoLFADS-beta/pbt_opt` directory, open `pbt_script_multiVM.py` in a text editor of your choice. In this tutorial, we will do so in nano with the following command:
+Next, we want to edit `pbt_script_multiVM.py`, the AutoLFADS run script, to link it to our data. Still inside the SSH window and inside the `autolfads/pbt_opt` directory, open `pbt_script_multiVM.py` in a text editor of your choice. In this tutorial, we will do so in nano with the following command:
 
     nano pbt_script_multiVM.py
 
