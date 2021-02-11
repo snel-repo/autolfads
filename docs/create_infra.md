@@ -21,7 +21,8 @@ Download the tutorial package [here](files/tutorial_package.zip).
 ## Create and configure the google cloud project
 This first step creates your project in Google Cloud Platform. This step only needs to be done once.
 
-Go to [https://cloud.google.com/](https://cloud.google.com/) and sign in with your Google account.
+Go to [https://cloud.google.com/](https://cloud.google.com/) and sign in with an account associated with your institution or university. Note that if you just sign in with your personal Google account, there is a chance that an eventual request for GPU quota will be denied, so it is highly suggested attempting to sign in with an institutional email address.
+
 
 If this is your first time logging into Google Cloud Platform, first we need to create a project. Navigate to the [console.cloud.google.com/compute](https://console.cloud.google.com/compute) and then fill out the details needed to create a project.
 

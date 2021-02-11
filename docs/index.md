@@ -17,7 +17,7 @@ In order to use this tutorial, it is suggested that:
 
 * Have neural population data in the format `neurons x trial-length x number of trials`, with sequence length <100 timesteps. 
 * Have access to Matlab and basic familiarity with it
-* Have a Google account and can pay for the usage of GPUs on the Google Cloud platform. For an estimated rate, a 2.5 hour AutoLFADS run with 8 GPUs (example run in tutorial) will cost ~$7. For more detailed pricing on GPUs, go to [https://cloud.google.com/compute/gpus-pricing](https://cloud.google.com/compute/gpus-pricing).
+* Have an email account associated with a university/institution and can pay for the usage of GPUs on the Google Cloud platform. For an estimated rate, a 2.5 hour AutoLFADS run with 8 GPUs (example run in tutorial) will cost ~$7. For more detailed pricing on GPUs, go to [https://cloud.google.com/compute/gpus-pricing](https://cloud.google.com/compute/gpus-pricing).
 
 ## Requesting GPU quota
 
