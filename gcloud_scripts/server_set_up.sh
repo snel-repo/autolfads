@@ -27,6 +27,8 @@ hash -r
 pip2 install --upgrade google-cloud-storage
 pip2 install --upgrade pymongo
 pip2 install future
+pip2 install grpcio==1.30.0
+pip2 install protobuf==3.12.2
 pip2 install tensorflow==1.14.0
 
 echo 'deb http://packages.cloud.google.com/apt gcsfuse-stretch main' | sudo tee /etc/apt/sources.list.d/gcsfuse.list
@@ -45,7 +47,7 @@ echo PYTHONPATH=/code/test-pbt-bucket/code/lfadslite:/code/test-pbt-bucket/code/
 sleep 40
 varxy=$(gcloud compute ssh ${SERVER_NAME} --command="hostname" --zone=${ZONE} 2>/dev/null)
 out=$?
-sleep_time=20
+sleep_time=40
 if [ $out -eq 255 ]
 then
         echo "Server boot-up incomplete. Wait for $sleep_time s"
@@ -57,9 +59,9 @@ else
         echo "exit status is $out"
 fi
 
-until gcloud compute ssh ${SERVER_NAME} --zone=${ZONE} --command="cat /etc/environment | grep -q lfadslite" ; do
-  sleep 5
-done
+#until gcloud compute ssh ${SERVER_NAME} --zone=${ZONE} --command="cat /etc/environment | grep -q lfadslite" ; do
+#  sleep 5
+#done
 
 gcloud compute ssh ${SERVER_NAME} --zone=${ZONE} --command='sudo mongo admin --host 127.0.0.1:27017 --eval "db.createUser({user: \"pbt_user\", pwd: \"pbt0Pass\", roles: [ { role: \"userAdminAnyDatabase\", db: \"admin\" }]});db.grantRolesToUser(\"pbt_user\", [{ role: \"readWriteAnyDatabase\", db: \"admin\" }]);" && sudo sed -i "/bindIp/d" /etc/mongod.conf && echo "security:
    authorization: enabled

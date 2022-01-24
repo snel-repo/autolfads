@@ -9,7 +9,7 @@ operation="$3"
 home_bucket='$HOME/bucket'
 
 cmd_mkdir="mkdir -p $home_bucket"
-cmd_mount="gcsfuse -o allow_other $cloud_bucket $home_bucket"
+cmd_mount="/usr/bin/gcsfuse -o allow_other $cloud_bucket $home_bucket"
 cmd_unmount="fusermount -u $home_bucket"
 instance_list=$(gcloud compute instances list --filter="tags:$base_name AND STATUS:RUNNING" --format="csv[no-heading](name)")
 

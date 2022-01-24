@@ -16,9 +16,9 @@ gcloud compute instances create ${INSTANCE_NAME} \
   --accelerator type=$GPU,count=${NUM_GPUS} \
   --min-cpu-platform "Automatic" \
   --tags "pbtclient" \
-  --image-family "ubuntu-1604-lts" \
-  --image-project "ubuntu-os-cloud" \
-  --boot-disk-size "20" \
+  --image-family "tf-1-14-cu100" \
+  --image-project "deeplearning-platform-release" \
+  --metadata="install-nvidia-driver=True" \
   --boot-disk-type "pd-ssd" \
   --boot-disk-device-name "${INSTANCE_NAME}-disk" \
   --metadata-from-file startup-script=./startup.sh

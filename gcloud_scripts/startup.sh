@@ -3,14 +3,14 @@
 # Get nvidia-driver
 echo "Checking for CUDA and installing."
 # Check for CUDA and try to install.
-if ! dpkg-query -W cuda-10-0; then
-  # The 16.04 installer works with 16.10.
-  curl -O http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_10.0.130-1_amd64.deb
-  dpkg -i ./cuda-repo-ubuntu1604_10.0.130-1_amd64.deb
-  apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
-  apt-get update
-  apt-get install cuda-10-0 -y
-fi
+#if ! dpkg-query -W cuda-10-0; then
+#  # The 16.04 installer works with 16.10.
+#  curl -O http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_10.0.130-1_amd64.deb
+#  dpkg -i ./cuda-repo-ubuntu1604_10.0.130-1_amd64.deb
+#  apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
+#  apt-get update
+#  apt-get install cuda-10-0 -y
+#fi
 
 # Get Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
@@ -32,7 +32,7 @@ export GCSFUSE_REPO=gcsfuse-`lsb_release -c -s`
 echo "deb http://packages.cloud.google.com/apt $GCSFUSE_REPO main" | tee /etc/apt/sources.list.d/gcsfuse.list
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 apt-get update
-apt-get install gcsfuse
+apt-get install -y gcsfuse
 
 # Pull the docker image
 docker pull snelbeta/autolfads:200402
