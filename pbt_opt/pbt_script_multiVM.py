@@ -68,28 +68,28 @@ svr.add_computers(computers)
 ''' ------------------------ Specify model parameters ------------------------ '''
 ''' Searchable parameters (explorable=True) '''
 # Learning rate
-svr.add_hp('learning_rate_init', (0.00001, 0.0015), init_sample_mode=[0.001],
+svr.add_hp('learning_rate_init', (0.00001, 0.005), init_sample_mode=[0.001],
            explore_method='perturb', explore_param=0.3, limit_explore=True, explorable=True)
 
 ''' Regularization '''
 # Standard Dropout
-svr.add_hp('keep_prob', (0.4, 1.0), init_sample_mode='rand',
+svr.add_hp('keep_prob', (0.3, 1.0), init_sample_mode='rand',
            explore_method='perturb', explore_param=0.3, limit_explore=True, explorable=True)
 
 # Coordinated Dropout
-svr.add_hp('keep_ratio', (0.3, 0.9), init_sample_mode=[0.5],
+svr.add_hp('keep_ratio', (0.01, 0.99), init_sample_mode=[0.5],
            explore_method='perturb', explore_param=0.3, limit_explore=True, explorable=True)
 
 # L2
-svr.add_hp('l2_gen_scale', (1e-5, 1.0), init_sample_mode='logrand', explorable=True)
-svr.add_hp('l2_ic_enc_scale', (1e-5, 1.0), init_sample_mode='logrand', explorable=True)
+svr.add_hp('l2_gen_scale', (1e-5, 1e-1), init_sample_mode='logrand', explorable=True)
+svr.add_hp('l2_ic_enc_scale', (1e-4, 1.0), init_sample_mode=[0.0], explorable=True)
 
-svr.add_hp('l2_con_scale', (1e-5, 1.0), init_sample_mode='logrand', explorable=True)
-svr.add_hp('l2_ci_enc_scale', (1e-5, 1.0), init_sample_mode='logrand', explorable=True)
+svr.add_hp('l2_con_scale', (1e-5, 1e-1), init_sample_mode='logrand', explorable=True)
+svr.add_hp('l2_ci_enc_scale', (1e-4, 1.0), init_sample_mode=[0.0], explorable=False)
 
 # KL
-svr.add_hp('kl_co_weight', (1e-6, 1e-3), init_sample_mode='logrand', explorable=True)
-svr.add_hp('kl_ic_weight', (1e-6, 1e-3), init_sample_mode='logrand', explorable=True)
+svr.add_hp('kl_co_weight', (1e-6, 1e-4), init_sample_mode='logrand', explorable=True)
+svr.add_hp('kl_ic_weight', (1e-6, 1e-4), init_sample_mode='logrand', explorable=True)
 
 
 
@@ -101,8 +101,8 @@ svr.add_hp('l2_increase_epochs', [80])
 
 ''' Other fixed params (default: explorable=False)'''
 # Batch size
-svr.add_hp('batch_size', [200])
-svr.add_hp('valid_batch_size', [200])
+svr.add_hp('batch_size', [480])
+svr.add_hp('valid_batch_size', [4000])
 
 # Validation metric used for PBT
 # svr.add_hp('val_cost_for_pbt', ['heldout_samp']) # uncomment for sample validation
@@ -127,14 +127,26 @@ svr.add_hp('ic_enc_seg_len', [0])  # for causal encoder, default=0 non-causal
 svr.add_hp('gen_dim', [64])
 
 # Controller
-svr.add_hp('co_dim', [4])
+svr.add_hp('co_dim', [2])
 svr.add_hp('ci_enc_dim', [64])
 svr.add_hp('con_dim', [64])
 svr.add_hp('do_causal_controller', [False])
 svr.add_hp('controller_input_lag', [1])
 
 # Output distribution:
-svr.add_hp('output_dist', ['poisson'])
+svr.add_hp('output_dist', ['zi-gamma'])
+
+# RADICaL specific HPs:
+svr.add_hp('temporal_shift', [0], explorable=False)
+svr.add_hp('fac_2_rates_transform', ['linscaledsigmoid'], explorable=False)
+svr.add_hp('temporal_shift_dist', ['normal'], explorable=False)
+svr.add_hp('apply_temporal_shift_during_posterior_sampling', [False], explorable=False)
+svr.add_hp('log_transform_input', [False], explorable=False)
+svr.add_hp('ff_keep_prob', [1.0], explorable=False)
+svr.add_hp('l2_fac_2_rates_scale', (1e-6, 1.0), init_sample_mode='logrand', explorable=False)
+svr.add_hp('gamma_prior', (1.0, 100.0), init_sample_mode=[20.0], explore_param=0.2, explorable=True)
+svr.add_hp('l2_gamma_distance_scale', [1e-4], explorable=False)
+svr.add_hp('s_min', [0.1], explorable=False)
 
 # ---- frequently not changed ----
 # change if you want to use PBT framework for random search
@@ -171,13 +183,13 @@ svr.add_hp('co_post_var_min', [0.0001])
 svr.add_hp('temporal_spike_jitter_width', [0])
 svr.add_hp('inject_ext_input_to_gen', [False])
 svr.add_hp('allow_gpu_growth', [True])
-svr.add_hp('max_grad_norm', [200.0])
+svr.add_hp('max_grad_norm', [300.0])
 svr.add_hp('do_reset_learning_rate', [True])
 svr.add_hp('do_calc_r2', [False])
 svr.add_hp('cell_clip_value', [5.0])
 svr.add_hp('prior_ar_atau', [10.0])
 svr.add_hp('prior_ar_nvar', [0.1])
-svr.add_hp('ckpt_save_interval', [1000])
+svr.add_hp('ckpt_save_interval', [100])
 svr.add_hp('do_train_prior_ar_atau', [True])
 svr.add_hp('do_train_prior_ar_nvar', [True])
 ''' --------------------------------------------------------------------- '''

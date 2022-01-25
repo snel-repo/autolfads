@@ -49,7 +49,7 @@ class pbtHelper(object):
 		computers=[]
 		keys = ['id', 'ip', 'max_processes', 'process_start_cmd', 'wait_for_process_start', 'zone']
 		for vm, zn in vmzn:
-		    values = [vm, vm, str(self.nprocess_gpu), '/snel/PBT_HP_opt/pbt_opt/run_lfads_client.sh', 'True', zn]
+		    values = [vm, vm, str(self.nprocess_gpu), '/snel/autoLFADS-beta/pbt_opt/run_lfads_client.sh', 'True', zn]
 		    dictionary = dict(zip(keys, values))
 		    computers.append(dictionary)
 		return computers
