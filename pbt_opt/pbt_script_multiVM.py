@@ -22,7 +22,7 @@ nprocess_gpu = 3
 
 pbt_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, pbt_path)
-helper = pbtHelper(bucket_name, data_path, run_path, name)
+helper = pbtHelper(bucket_name, data_path, run_path, name, nprocess_gpu)
 my_zone = helper.my_zone
 server_id=helper.server_id
 machine_name=helper.machine_name

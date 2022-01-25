@@ -2,7 +2,7 @@ import os
 import subprocess
 
 class pbtHelper(object):
-	def __init__(self, bucket_name, data_path, run_path, name):
+	def __init__(self, bucket_name, data_path, run_path, name, nprocess_gpu):
 		self.bucket_name = bucket_name
 		self.data_path = data_path
 		self.run_path = run_path
@@ -10,6 +10,7 @@ class pbtHelper(object):
 		self.container_name = 'docker_pbt'
 		self.run_dir="pbt_run"
 		self.name = name
+                self.nprocess_gpu = nprocess_gpu
 		self.run_save_path = self.get_run_save_path(self.bucket_name, self.run_path)
 		self.data_dir = self.get_data_dir(self.data_path)
 
@@ -46,10 +47,9 @@ class pbtHelper(object):
 
 	def get_computers(self, vmzn):
 		computers=[]
-		nprocess_gpu = 3
 		keys = ['id', 'ip', 'max_processes', 'process_start_cmd', 'wait_for_process_start', 'zone']
 		for vm, zn in vmzn:
-		    values = [vm, vm, str(nprocess_gpu), '/snel/PBT_HP_opt/pbt_opt/run_lfads_client.sh', 'True', zn]
+		    values = [vm, vm, str(self.nprocess_gpu), '/snel/PBT_HP_opt/pbt_opt/run_lfads_client.sh', 'True', zn]
 		    dictionary = dict(zip(keys, values))
 		    computers.append(dictionary)
 		return computers
