@@ -1,7 +1,5 @@
 # AutoLFADS on Google Cloud Platform
 
-dummy
-
 This tutorial is a programming-beginner friendly, step-by-step walkthrough on applying AutoLFADS, a deep learning tool that can be trained to uncover dynamics from single trial neural population data, using the computational resources of Google Cloud Platform. 
 
 
