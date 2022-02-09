@@ -1,5 +1,5 @@
 #Overview
-We will briefly describe the architecture of AutoLFADS, focusing on a high-level, theoretical overview over the basic organization and functionality of the various VMs created when beginning an AutoLFADS run. While this section describes the schema and theory behind the architecture of AutoLFADS, the steps to creating the basic architecture to begin an AutoLFADS runs are described beginning in [first-time setup](../create_infra). 
+We will briefly describe the architecture of AutoLFADS, focusing on a high-level, theoretical overview over the basic organization and functionality of the various VMs created when beginning an AutoLFADS run. RADICaL follows exactly the same architecture as AutoLFADS. While this section describes the schema and theory behind the architecture of AutoLFADS, the steps to creating the basic architecture to begin an AutoLFADS or RADICaL run are described beginning in [first-time setup](../create_infra). 
 
 ![architecture](img/architecture.png)
 
