@@ -1,4 +1,4 @@
-This section details a general theoretical overview of AutoLFADS. We can generally think of AutoLFADS as a combination of LFADS with a hyperparameter tuning framework called population-based training, or PBT. 
+This section details a general theoretical overview of AutoLFADS. We can generally think of AutoLFADS as a combination of LFADS with a hyperparameter tuning framework called population-based training, or PBT. We also include a general overview of RADICaL.
  
 In order to understand AutoLFADS, we will first look at LFADS and PBT independently. 
 
@@ -31,3 +31,9 @@ In this way, instead of workers with poorly optimized HPs floundering for an ent
 
 ##What is AutoLFADS?
 AutoLFADS is the training of LFADS with a PBT framework for HP optimization. While LFADS will struggle in being applied to less-structured behaviors or brain areas not primarily governed by intrinsic dynamics, AutoLFADS with its HP optimization can achieve good performance in these diverse datasets.
+
+### Extension of AutoLFADS for modeling EMG activity
+Coming soon
+
+## What is RADICaL?
+RADICaL is an extension of AutoLFADS for application to 2-photon (2p) calcium imaging data. It incorporates two major innovations over AutoLFADS. First, RADICaL's observation model was modified to better account for the statistics of deconvolved calcium events. Second, RADICaL integrated a novel neural network training strategy, selective backpropagation through time (SBTT), that exploits the staggered timing of 2p sampling of neuronal populations to recover network dynamics with high temporal precision.
