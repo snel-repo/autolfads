@@ -1,7 +1,7 @@
-This step involves modifying the AutoLFADS python script to link to your VMs and bucket. Note that prior to this step, [cloud infrastructure](../create_infra) must be created already, the code must be [cloned inside the server VM](../add_user/#pull-autolfads-code-onto-server-vm), the user must be added to [docker group](../add_user), and the bucket must be [created](../create_bucket) and data [uploaded](../data) to it.
+This step involves modifying the AutoLFADS or RADICaL python script to link to your VMs and bucket. Note that prior to this step, [cloud infrastructure](../create_infra) must be created already, the code must be [cloned inside the server VM](../add_user/#pull-autolfads-code-onto-server-vm), the user must be added to [docker group](../add_user), and the bucket must be [created](../create_bucket) and data [uploaded](../data) to it.
 
 
-##Linking AutoLFADS script to your data <a href=https://snel-repo.github.io/autolfads/run_params/><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
+##Linking AutoLFADS or RADICaL script to your data <a href=https://snel-repo.github.io/autolfads/run_params/><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
 
 First, make sure you are SSHed back into your server VM. 
 
@@ -39,7 +39,7 @@ In this tutorial, we'll modify these to be the following:
 <pre><code>name = 'tut_run'
 </code></pre>
 
-These changes to the script are necessary to link AutoLFADS to your data. However, there is also a variety of HPs in this script whose intial values, range of variance, and manner of pertubation by PBT can be edited.  For information on explaining the various HPs and how to edit their initial values and ranges, go to the [modifying HPs](../runAddInfo) section in the Additional Information section.
+These changes to the script are necessary to link AutoLFADS or RADICaL to your data. However, there is also a variety of HPs in this script whose intial values, range of variance, and manner of pertubation by PBT can be edited.  For information on explaining the various HPs and how to edit their initial values and ranges, go to the [modifying HPs](../runAddInfo) section in the Additional Information section.
 
 You can save your changes and exit your text editor.
 

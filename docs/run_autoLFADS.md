@@ -15,7 +15,7 @@ First, type the following command into your SSH window (NOT cloud shell).
 
     tmux
 
-Then, making sure you're still in the `autolfads/pbt_opt` directory, run the following command to begin your AutoLFADS run.
+Then, making sure you're still in the `autolfads/pbt_opt` directory, run the following command to begin your AutoLFADS or RADICaL run.
 
     python2 pbt_script_multiVM.py 
 

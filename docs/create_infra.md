@@ -60,8 +60,14 @@ Once the project is created, we must create a server VM. To do so, first navigat
 ![Activate Cloud Shell](img/activate_cloud_shell.png)
    
 Inside the shell of the gcloud project, we want to clone the SNEL repository. This has the collection of scripts which we will be using to create and set-up the server and client VMs and also to start PBT.
+
+For original AutoLFADS modeling spiking activity:
    
     git clone -b GCP https://github.com/snel-repo/autolfads.git
+
+For extensions of AutoLFADS modeling EMG and calcium (i.e., RADICaL) signals:
+    git clone -b GCP-extension https://github.com/snel-repo/autolfads.git
+
    
 Now, we want to navigate to the gcloud_scripts directory inside this repository. We can type the following command into our cloud shell to navigate to this directory. 
    

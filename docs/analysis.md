@@ -33,16 +33,40 @@ Run the `pbt_plot.m` script. This script will show the evolution of HPs over suc
 
 ![learning rate init](img/learning_rate_init.png)
 
-##Compare to true rates
+## Application-specific analyses
+
+###Spiking dataset: compare to true rates
 
 !!! note
-    This section is only for users using a synthetic dataset (as in the tutorial_package) where ground truth is available. 
+    This section is only for users using a synthetic spiking dataset (as in the tutorial_package) where ground truth firing rates are available. 
 
 If you used the synthetic dataset derived from Lorenz, then we can compare to the true rates.
 
 First, open the `compare_rates.m` script in the tutorial package. Fill in the first `lfads_output_dir` with the address of the `lfads_output` which is located inside your `run` folder. For instance, on my computer its `C:\\Users\tutorial\output\runs\lfads_output`.
 
 Then, you can run the script, which will generate R^2 value, which represents the error in the inferred rates compared to the true rates, as well as plot the inferred rates of several example neurons against their true underlying rates.
+
+![d](img/r2_output.PNG)
+
+The following plot was generated from this tutorial's run.
+
+![img](img/compare_rates_output.PNG)
+
+###EMG dataset:
+
+!!! note
+    This section is only for the specific EMG dataset in the tutorial_package 
+
+###Calcium dataset: map to true latent states
+
+!!! note
+    This section is only for users using a synthetic calcium dataset (as in the tutorial_package) where ground truth latent states are available. 
+
+If you used the synthetic calcium dataset derived from Lorenz, then we can measure how well RADICaL predicts the true latent states.
+
+First, open the `map_to_latents.m` script in the tutorial package. Fill in the first `lfads_output_dir` with the address of the `lfads_output` which is located inside your `run` folder. For instance, on my computer its `C:\\Users\tutorial\output\runs\lfads_output`.
+
+Then, you can run the script. RADICaL inferred rates are mapped to the ground truth lorenz states by training a ridge regression. The script will then generate R^2 (coefficient of determination) value, which represents how well the predicted latent states match to the true latent states for the testing trials, as well as plot the predicted latent states of several example conditions against their ground truth latent states.
 
 ![d](img/r2_output.PNG)
 

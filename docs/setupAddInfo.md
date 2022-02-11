@@ -6,7 +6,7 @@ Leaving VMs running can lead to unintended high bills. VMs can be stopped, delet
 ##Cloud Shell
 Many of the commands needed to set-up infrastructure are done using Google Cloud Shell. While the commands needed are listed directly in the tutorial, further information on navigating/using cloud shell can be found here: [https://cloud.google.com/shell/docs/using-cloud-shell](https://cloud.google.com/shell/docs/using-cloud-shell).
 
-Typical commands used for an AutoLFADS run are entering directories with `cd`, copying git repos with `git clone`, and running shell scripts with `sh`.
+Typical commands used for an AutoLFADS or RADICaL run are entering directories with `cd`, copying git repos with `git clone`, and running shell scripts with `sh`.
 
 ##Choosing number of clients
 In essence, each client VM can have 2-3 workers running on it, and the more total workers means a wider search for optimal hyperparameters. Thus, the more client VMs we create when setting up a run, the wider search for optimal hyperparameters. 
@@ -14,7 +14,7 @@ In essence, each client VM can have 2-3 workers running on it, and the more tota
 In general for most mid-sized datasets, having 24 workers usually will lead to finding optimal HPs. In this tutorial, we create 8 client VMs, which allows use of 24 workers. This number can be adjusted if the dataset is larger or smaller.
 
 ##Allocating Clients Between Multiple Zones
-If your AutoLFADS run involves a significant number of different client machines, but you lack the GPU quota in a single region, you can allocate these over a number of regions.
+If your AutoLFADS or RADICaL run involves a significant number of different client machines, but you lack the GPU quota in a single region, you can allocate these over a number of regions.
 
 For instance, if you want to create 8 clients machines, but only have a regional quota of 4 GPUs in either region, then you can create 4 in us-central1-c and 4 in us-east1-c by running the following commands consecutively.
 

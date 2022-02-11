@@ -1,5 +1,5 @@
 #Overview
-The following quick start guide offers a general pipeline for the steps of running AutoLFADS over Google Cloud Platform, and each step can be expanded to offer abbreviated instructions including code and links to detailed sections. Brand new users are recommended to use the more detailed versions of instructions, beginning with [First Time Set-up](../create_infra).
+The following quick start guide offers a general pipeline for the steps of running AutoLFADS or RADICaL over Google Cloud Platform, and each step can be expanded to offer abbreviated instructions including code and links to detailed sections. Brand new users are recommended to use the more detailed versions of instructions, beginning with [First Time Set-up](../create_infra).
 
 
 <div class="flowchart">

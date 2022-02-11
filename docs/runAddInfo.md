@@ -1,5 +1,5 @@
 ##Modifying HPs
-While PBT is designed to automatically search for optimal hyperparameters during an AutoLFADS run, there are still adjustments we can make to the HPs prior to the run that can allow for better performance, such as a more optimal initialization value, or adjusting the ranges at which the HPs can vary. Go to the [glossary](../parameters) for in-depth information on all parameters.
+While PBT is designed to automatically search for optimal hyperparameters during an AutoLFADS or RADICaL run, there are still adjustments we can make to the HPs prior to the run that can allow for better performance, such as a more optimal initialization value, or adjusting the ranges at which the HPs can vary. Go to the [glossary](../parameters) for in-depth information on all parameters.
 
 ##Updating Docker image
 If you are re-using client machines created some time ago, there is a chance that the Docker image needs to be updated. The following steps explain how to update the Docker image on all machines. 
