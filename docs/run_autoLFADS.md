@@ -3,7 +3,7 @@ Now, we are ready to begin our run. All previous steps must be completed to this
 !!! warning
     Note that if you are doing an additional run, make sure that the folder you set your `run_path` to is completely empty. Also if you have a .zip file in your bucket named the same as your `run_path`, you must delete it before starting a new run.  
 
-##Beginning AutoLFADS in tmux <a href=https://snel-repo.github.io/autolfads/run_autoLFADS/#walkthrough><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
+##Beginning AutoLFADS or RADICaL in tmux <a href=https://snel-repo.github.io/autolfads/run_autoLFADS/#walkthrough><img src="../img/vidicon.png" alt="IMAGE ALT TEXT HERE" width="20" height="auto" border="10" /></a>
 
 First, make sure you're SSHed into your server VM. Then, make sure you're in the directory `autolfads/pbt_opt` directory. If not, you can navigate with the following command:
 

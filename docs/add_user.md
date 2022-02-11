@@ -34,11 +34,11 @@ You have now SSHed into your server client. Now, inside this newly opened SSH br
 
 Run the following command in the SSH window.
 
-For original AutoLFADS modeling spiking activity:
+For original AutoLFADS modeling <span style="color:blue;"> spiking activity</span>:
 
     git clone -b GCP https://github.com/snel-repo/autolfads.git
 
-For extensions of AutoLFADS modeling EMG and calcium (i.e., RADICaL) signals:
+For extensions of AutoLFADS modeling <span style="color:magenta;"> EMG</span> and <span style="color:red;"> calcium (i.e., RADICaL)</span> signals:
 
     git clone -b GCP-extension https://github.com/snel-repo/autolfads.git
 

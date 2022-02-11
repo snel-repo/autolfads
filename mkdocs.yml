@@ -13,10 +13,10 @@ pages:
     - Set-up storage infrastructure: create_bucket.md
     - Set-up user: add_user.md
     - Additional Information: setupAddInfo.md
-  - Run AutoLFADS:
+  - Run Model:
     - Upload data: data.md
     - Set-up run parameters: run_params.md
-    - Run AutoLFADS: run_autoLFADS.md
+    - Run Model: run_autoLFADS.md
     - During run: client_tmux.md 
     - Additional Information: runAddInfo.md
   - Analysis: 

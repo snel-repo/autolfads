@@ -5,7 +5,7 @@ This tutorial is a programming-beginner friendly, step-by-step walkthrough on ap
 
 ## Quick introduction
 
-AutoLFADS is the combination of Latent Factor Analysis via Dynamical Systems (LFADS), a deep learning method to infer latent dynamics from single-trial neural population data, with Population Based Training (PBT), an automatic hyperparameter tuning framework. AutoLFADS was originally designed for modeling spiking activity [1]. It was recently extended for modeling EMG activity [2]. RADICaL is a recent adaptation of AutoLFADS for modeling 2-photon calcium imaging data [3]. This tutorial walks through instructions and examples for all three applications.
+AutoLFADS is the combination of Latent Factor Analysis via Dynamical Systems (LFADS), a deep learning method to infer latent dynamics from single-trial neural population data, with Population Based Training (PBT), an automatic hyperparameter tuning framework. AutoLFADS was originally designed for modeling <span style="color:blue;"> spiking activity [1,2]</span>, and recently extended for modeling <span style="color:magenta;"> EMG activity [3]</span>. RADICaL is a recent adaptation of AutoLFADS for modeling <span style="color:red;"> 2-photon calcium imaging data [4]</span>. This tutorial walks through instructions and examples for all three applications.
 
 Specifically, this tutorial focuses on running AutoLFADS and RADICaL on Google Cloud Platform (GCP), which allows the use of these methods using computational resources available for rent on the cloud. Thus, as long as the user has access to GCP and the ability to pay for the usage of GPUs, then this tutorial can be used to apply AutoLFADS and RADICaL to neural population data without any need for local hardware.  
 
@@ -25,8 +25,10 @@ Google Cloud Platform enforces a GPU quota to prevent unforseen spikes in usage.
 
 ## References
 
-[1] [https://www.biorxiv.org/content/10.1101/2021.01.13.426570v1](https://www.biorxiv.org/content/10.1101/2021.01.13.426570v1)
+[1] Pandarinath C. *et al*. Inferring single-trial neural population dynamics using sequential auto-encoders. *Nature Methods* (2018). [Paper link](https://www.nature.com/articles/s41592-018-0109-9)
 
-[2] [https://www.biorxiv.org/content/10.1101/2021.12.01.470827v1](https://www.biorxiv.org/content/10.1101/2021.12.01.470827v1)
+[2] Keshtkaran MR\*, Sedler AR\*. *et al*. A large-scale neural network training framework for generalized estimation of single-trial population dynamics. Accepted in principle at *Nature Methods* (2022). [bioRxiv link](https://www.biorxiv.org/content/10.1101/2021.01.13.426570v1)
 
-[3] [https://www.biorxiv.org/content/10.1101/2021.11.21.469441v2](https://www.biorxiv.org/content/10.1101/2021.11.21.469441v2)
+[3] Wimalasena LN. *et al*. Estimating muscle activation from EMG using deep learning-based dynamical systems models. *In revision*. [bioRxiv](https://www.biorxiv.org/content/10.1101/2021.12.01.470827v1)
+
+[4] Zhu F. *et al*. A deep learning framework for inference of single-trial neural population activity from calcium imaging with sub-frame temporal resolution. *In revision*. [bioRxiv link](https://www.biorxiv.org/content/10.1101/2021.11.21.469441v2)

@@ -5,7 +5,7 @@ This tutorial offers the following:
 
 2.  A fundamental overview of RADICaL, including its innovations for adapting to 2-photon calcium imaging.
  
-3.  A step-by-step tutorial on running AutoLFADS and RADICaL using Google Cloud Platform, on either sample data or your own neuronal spiking data, EMG data or calcium data.
+3.  A step-by-step tutorial on running AutoLFADS and RADICaL using Google Cloud Platform, on either sample <span style="color:blue;"> spiking data</span>, <span style="color:magenta;"> EMG data</span> or <span style="color:red;"> calcium data</span>, or your own neural population data.
 
 3.  Instructions on analyzing the rates obtained from AutoLFADS or RADICaL.
  
