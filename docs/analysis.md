@@ -68,8 +68,8 @@ First, open the `map_to_latents.m` script in the tutorial package. Fill in the f
 
 Then, you can run the script. RADICaL inferred rates are mapped to the ground truth lorenz states by training a ridge regression. The script will then generate R^2 (coefficient of determination) value, which represents how well the predicted latent states match to the true latent states for the testing trials, as well as plot the predicted latent states of several example conditions against their ground truth latent states.
 
-![d](img/r2_output.PNG)
+![d](img/cal_r2_output.PNG)
 
 The following plot was generated from this tutorial's run.
 
-![img](img/compare_rates_output.PNG) 
+![img](img/compare_latents.PNG) 
