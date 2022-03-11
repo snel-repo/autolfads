@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker_tag="220124"
+docker_tag="220311"
 base_name="pbtclient"
 u='snelbeta'
 p='$Cr}ZqK:mg68)Vny'

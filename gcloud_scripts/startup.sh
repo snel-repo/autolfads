@@ -35,7 +35,7 @@ apt-get update
 apt-get install -y gcsfuse
 
 # Pull the docker image
-docker pull snelbeta/radical:220124
+docker pull snelbeta/radical:220311
 
 # Uncomment the /etc/fuse.conf line
 sed -i '8 s/^#//' /etc/fuse.conf
