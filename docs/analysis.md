@@ -57,6 +57,21 @@ The following plot was generated from this tutorial's run.
 !!! note
     This section is only for the specific EMG dataset in the tutorial_package 
 
+If you used the locomotion EMG dataset provided in the tutorial package, then we can visualize the output of the AutoLFADS model and also perform a joint angular acceleration decoding analysis similar to what is presented in Wimalasena et al., 2021. 
+
+First, open the `emg_post_analysis.py` script in the tutorial package. 
+- Change the `data_dir` with the address of the `lfads_input` which is located in your `run` folder 
+- Change the `lfads_output_dir` with the address of the `lfads_output` (also in `run`)
+For instance, on my computer its `C:\\Users\tutorial\output\runs\lfads_output`.
+
+Then you can run the script. AutoLFADS inferred means from the training and validation set used for training will be plotted for 4 example EMG channels. Additionally, an optimal linear estimator will be fit to map the AutoLFADS output onto joint angular accelerations of the hip, knee, and ankle. Cross-validated R^2 calues are included in the title of each subplot. 
+
+The following plots will be generated from this script in the tutorial. 
+
+![img](img/autolfads_emg_output.png)
+
+![img](img/autolfads_jointacc_predictions.png)
+
 ###Calcium dataset: map to true latent states
 
 !!! note

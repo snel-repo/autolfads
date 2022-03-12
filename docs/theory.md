@@ -33,7 +33,7 @@ In this way, instead of workers with poorly optimized HPs floundering for an ent
 AutoLFADS is the training of LFADS with a PBT framework for HP optimization. While LFADS will struggle in being applied to less-structured behaviors or brain areas not primarily governed by intrinsic dynamics, AutoLFADS with its HP optimization can achieve good performance in these diverse datasets.
 
 ### Extension of AutoLFADS for modeling EMG activity
-Coming soon
+AutoLFADS was recently adapted for application to multi-muscle intramuscular EMG recordings. The observation model of the AutoLFADS model was modified to better match the statistics of EMG. Additionally, we introduced a novel data augmentation strategy to mitigate overfitting to high-magnitude artifacts sometimes present in EMG recordings. 
 
 ## What is RADICaL?
 RADICaL is an extension of AutoLFADS for application to 2-photon (2p) calcium imaging data. It incorporates two major innovations over AutoLFADS. First, RADICaL's observation model was modified to better account for the statistics of deconvolved calcium events. Second, RADICaL integrated a novel neural network training strategy, selective backpropagation through time (SBTT), that exploits the staggered timing of 2p sampling of neuronal populations to recover network dynamics with high temporal precision.
