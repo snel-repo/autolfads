@@ -985,8 +985,10 @@
 For instance, on my computer its <code>C:\\Users\tutorial\output\runs\lfads_output</code>.</p>
 <p>Then you can run the script. AutoLFADS inferred means from the training and validation set used for training will be plotted for 4 example EMG channels. Additionally, an optimal linear estimator will be fit to map the AutoLFADS output onto joint angular accelerations of the hip, knee, and ankle. Cross-validated R^2 calues are included in the title of each subplot. </p>
 <p>The following plots will be generated from this script in the tutorial. </p>
-<p><img alt="img" src="../img/autolfads_emg_output.png" /></p>
-<p><img alt="img" src="../img/autolfads_emg_jointacc_predictions.png" /></p>
+<p>Below, is a plot of the single-trial inferred muscle activations for four muscles from a trained AutoLFADS model on the tutorial EMG dataset. Output has been split into two columns based on whether the EMG data was included in the training or validation set used during AutoLFADS training. 
+<img alt="d" src="../img/autolfads_emg_output.png" /></p>
+<p>Below, is a plot of the decoded single-trial joint angular acceleration predictions from a trained AutoLFADS model on the tutorial EMG dataset. True behavior is shown in black, predictions overlaid in blue. Cross-validated R^2 value is included in the title.
+<img alt="img" src="../img/autolfads_emg_jointacc_predictions.png" /></p>
 <h3 id="calcium-dataset-map-to-true-latent-states">Calcium dataset: map to true latent states</h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
