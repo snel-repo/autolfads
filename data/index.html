@@ -8,9 +8,8 @@
       
       
       
-      
-      <link rel="shortcut icon" href="../img/snelogo.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+      <link rel="icon" href="../img/snelogo.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10">
     
     
       
@@ -18,10 +17,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.d6be258b.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
         
           
           
@@ -35,17 +34,18 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
-    
     
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
       <link rel="stylesheet" href="../stylesheets/flowchart_style.css">
     
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+
     
     
   </head>
@@ -57,8 +57,8 @@
     
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="red">
-      
   
+    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setting-up-your-data" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -75,26 +75,27 @@
       
     </div>
     
+    
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="AutoLFADS Tutorial" class="md-header-nav__button md-logo" aria-label="AutoLFADS Tutorial">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AutoLFADS Tutorial" class="md-header__button md-logo" aria-label="AutoLFADS Tutorial" data-md-component="logo">
       
   <img src="../img/snelogo.png" alt="logo">
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
           <span class="md-ellipsis">
             AutoLFADS Tutorial
           </span>
         </div>
-        <div class="md-header-nav__topic">
+        <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
               Upload data
@@ -104,22 +105,27 @@
       </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -136,6 +142,7 @@
     
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -143,6 +150,7 @@
       
         
           
+            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
@@ -207,7 +215,7 @@
   
     <li class="md-tabs__item">
       <a href="./" class="md-tabs__link md-tabs__link--active">
-        Run AutoLFADS
+        Run Model
       </a>
     </li>
   
@@ -248,6 +256,7 @@
     </ul>
   </div>
 </nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -255,19 +264,17 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
-
-
 
   
 
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="AutoLFADS Tutorial" class="md-nav__button md-logo" aria-label="AutoLFADS Tutorial">
+    <a href=".." title="AutoLFADS Tutorial" class="md-nav__button md-logo" aria-label="AutoLFADS Tutorial" data-md-component="logo">
       
   <img src="../img/snelogo.png" alt="logo">
 
@@ -281,269 +288,300 @@
       
       
 
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Introduction
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Is This Tutorial For You?
+      </a>
+    </li>
+  
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigate/" class="md-nav__link">
+        Navigating the Tutorial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/" class="md-nav__link">
+        Theory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        Architecture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introductionAddInfo/" class="md-nav__link">
+        Additional Info
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
 
   
-  <li class="md-nav__item md-nav__item--nested">
-    
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" >
-    
-    <label class="md-nav__link" for="nav-1">
-      Introduction
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Introduction" data-md-level="1">
-      <label class="md-nav__title" for="nav-1">
-        <span class="md-nav__icon md-icon"></span>
-        Introduction
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href=".." class="md-nav__link">
-      Is This Tutorial For You?
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../navigate/" class="md-nav__link">
-      Navigating the Tutorial
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../theory/" class="md-nav__link">
-      Theory
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../architecture/" class="md-nav__link">
-      Architecture
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../introductionAddInfo/" class="md-nav__link">
-      Additional Info
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-
   
-  <li class="md-nav__item md-nav__item--nested">
+  
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
-    
-    <label class="md-nav__link" for="nav-2">
-      Quick Start
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Quick Start" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon"></span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Quick Start
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Quick Start" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Quick Start
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flowchart/" class="md-nav__link">
         Quick Start
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../flowchart/" class="md-nav__link">
-      Quick Start
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-
-  
-  <li class="md-nav__item md-nav__item--nested">
-    
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
-    
-    <label class="md-nav__link" for="nav-3">
-      First Time Set-up
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="First Time Set-up" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon"></span>
-        First Time Set-up
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../create_infra/" class="md-nav__link">
-      Set-up virtual machines
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../create_bucket/" class="md-nav__link">
-      Set-up storage infrastructure
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../add_user/" class="md-nav__link">
-      Set-up user
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../setupAddInfo/" class="md-nav__link">
-      Additional Information
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
+      </a>
+    </li>
   
 
-
-  
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
-    
-    <label class="md-nav__link" for="nav-4">
-      Run AutoLFADS
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Run AutoLFADS" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon"></span>
-        Run AutoLFADS
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+            
           
-          
-          
-
-
+        </ul>
+      </nav>
+    </li>
   
 
+    
+      
+      
+      
 
-  <li class="md-nav__item md-nav__item--active">
+  
+  
+  
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          First Time Set-up
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="First Time Set-up" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          First Time Set-up
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_infra/" class="md-nav__link">
+        Set-up virtual machines
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_bucket/" class="md-nav__link">
+        Set-up storage infrastructure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../add_user/" class="md-nav__link">
+        Set-up user
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setupAddInfo/" class="md-nav__link">
+        Additional Information
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
     
+      
+      
+      
+
+  
+  
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Run Model
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Run Model" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Run Model
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Upload data
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Upload data
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
-      Upload data
-    </a>
-    
+      </a>
       
+        
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
   
@@ -551,7 +589,14 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#setting-up-your-data" class="md-nav__link">
@@ -562,9 +607,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sample-dataset" class="md-nav__link">
-    Sample dataset
+  <a href="#sample-datasets" class="md-nav__link">
+    Sample datasets
   </a>
+  
+    <nav class="md-nav" aria-label="Sample datasets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#synthetic-spiking-dataset" class="md-nav__link">
+     Synthetic spiking dataset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-emg-dataset" class="md-nav__link">
+     Real EMG dataset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synthetic-2-photon-calcium-imaging-dataset" class="md-nav__link">
+     Synthetic 2-photon calcium imaging dataset
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -590,175 +662,196 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../run_params/" class="md-nav__link">
+        Set-up run parameters
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../run_autoLFADS/" class="md-nav__link">
+        Run Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client_tmux/" class="md-nav__link">
+        During run
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../runAddInfo/" class="md-nav__link">
+        Additional Information
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
     
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../run_params/" class="md-nav__link">
-      Set-up run parameters
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../run_autoLFADS/" class="md-nav__link">
-      Run AutoLFADS
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../client_tmux/" class="md-nav__link">
-      During run
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../runAddInfo/" class="md-nav__link">
-      Additional Information
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
       
       
       
-
-
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
-    
-    <label class="md-nav__link" for="nav-5">
-      Analysis
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Analysis" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon"></span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Analysis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Analysis" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Analysis
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analysis/" class="md-nav__link">
         Analysis
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      </a>
+    </li>
+  
+
+            
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../log_files/" class="md-nav__link">
+        Log Files
+      </a>
+    </li>
+  
+
+            
           
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../analysis/" class="md-nav__link">
-      Analysis
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../log_files/" class="md-nav__link">
-      Log Files
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
-
-
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
-    
-    <label class="md-nav__link" for="nav-6">
-      Glossary/Common Errors
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Glossary/Common Errors" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        <span class="md-nav__icon md-icon"></span>
-        Glossary/Common Errors
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Glossary/Common Errors
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Glossary/Common Errors" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Glossary/Common Errors
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parameters/" class="md-nav__link">
+        Glossary of Parameters
+      </a>
+    </li>
+  
+
+            
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common_errors/" class="md-nav__link">
+        Common Errors
+      </a>
+    </li>
+  
+
+            
           
-
-
-
-  <li class="md-nav__item">
-    <a href="../parameters/" class="md-nav__link">
-      Glossary of Parameters
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../common_errors/" class="md-nav__link">
-      Common Errors
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
   </ul>
@@ -769,11 +862,13 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
   
@@ -781,7 +876,14 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#setting-up-your-data" class="md-nav__link">
@@ -792,9 +894,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sample-dataset" class="md-nav__link">
-    Sample dataset
+  <a href="#sample-datasets" class="md-nav__link">
+    Sample datasets
   </a>
+  
+    <nav class="md-nav" aria-label="Sample datasets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#synthetic-spiking-dataset" class="md-nav__link">
+     Synthetic spiking dataset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-emg-dataset" class="md-nav__link">
+     Real EMG dataset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synthetic-2-photon-calcium-imaging-dataset" class="md-nav__link">
+     Synthetic 2-photon calcium imaging dataset
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -825,114 +954,113 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                
-                  <h1>Upload data</h1>
-                
-                <div class="admonition info">
+
+  <h1>Upload data</h1>
+
+<h2 id="overview">Overview</h2>
+<div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Estimated time for section: <strong>2 hours</strong></p>
 </div>
-<p>This section details the steps for connecting your dataset to AutoLFADS and then beginning a run.</p>
-<p>The following steps have to be done everytime you want to begin an AutoLFADS run with a new dataset. If you already have data uploaded to the bucket, and you have already linked your <a href="../run_params">run parameters</a>, then you can proceed straight to the <a href="../run_autoLFADS">run autoLFADS</a> section.</p>
+<p>This section details the steps for connecting your dataset to AutoLFADS or RADICaL and then beginning a run.</p>
+<p>The following steps have to be done everytime you want to begin an AutoLFADS or RADICaL run with a new dataset. If you already have data uploaded to the bucket, and you have already linked your <a href="../run_params">run parameters</a>, then you can proceed straight to the <a href="../run_autoLFADS">run model</a> section.</p>
 <p>At this point in the tutorial, you have already set up your <a href="../create_infra">cloud infrastructure</a>. If you would like to add additional client machines, the way to do this is explained in <a href="../runAddInfo/#Add-Additional-Client-Machines">add additional client machines</a> section in the 'Additional Information' section. </p>
 <p>Note, if you are re-using client machines you have created some time ago, there is a chance you might have to update your Docker image on all client machines. Instructions for doing so are in the <a href="../runAddInfo/#Updating-docker-image">update Docker image</a> section. </p>
 <h2 id="setting-up-your-data">Setting up your data</h2>
-<h3 id="sample-dataset">Sample dataset</h3>
-<p>This tutorial has a sample synthetic dataset derived from a Lorenz system that can be used to set-up an AutoLFADS run. This synthetic dataset is ideal to test out AutoLFADS as it is intrinsically low-D, and the inferred rates generated by AutoLFADS can easily be compared to its true rates to give a sense of the effectiveness of AutoLFADS.</p>
-<p>The synthetic dataset is located in the tutorial package, called <code>lfads_data.h5</code>. If you have not downloaded it yet, you can <a href="../files/tutorial_package.zip">download it here</a>.</p>
-<p>If you would like to use this dataset, you can skip the next section on using your own data, and proceed straight to the 'Uploading data' section in this page.</p>
+<h3 id="sample-datasets">Sample datasets</h3>
+<p>This tutorial includes three sample datasets, a synthetic spiking dataset and a real EMG dataset to demonstrate AutoLFADS, and a synthetic 2-photon calcium imaging dataset to demonstrate RADICaL.</p>
+<h4 id="synthetic-spiking-dataset"><span style="color:blue;"> Synthetic spiking dataset</span></h4>
+<p>This sample synthetic dataset is derived from a Lorenz system that can be used to set-up an AutoLFADS run. This synthetic dataset is ideal to test out AutoLFADS as it is intrinsically low-D, and the inferred rates generated by AutoLFADS can easily be compared to its true rates to give a sense of the effectiveness of AutoLFADS.</p>
+<h4 id="real-emg-dataset"><span style="color:magenta;"> Real EMG dataset</span></h4>
+<p>This sample dataset contains hindlimb EMG recorded from 12 muscles in a rat walking at a constant speed (20 m/min) on a treadmill. Data was collected in Matthew Tresch's lab by Dr. Cristiano Alessandro and previously published in Alessandro et al., eLife 2018. This dataset was used to validate using AutoLFADS to estimate multi-muscle activation from EMG in Wimalasena et al., bioRxiv 2021. The dataset contains pre-processed, rectified EMG for AutoLFADS training and also contains joint angular accelerations that can be used after model training to validate model output through a decoding analysis similar to what's presented in the paper. </p>
+<p>The EMG dataset is located in the tutorial package, under the name <code>lfads_emg_input.h5</code>. If you have not downloaded it yet, you can <a href="../files/tutorial_package.zip">download it here</a>.</p>
+<h4 id="synthetic-2-photon-calcium-imaging-dataset"><span style="color:red;"> Synthetic 2-photon calcium imaging dataset</span></h4>
+<p>This sample dataset contains simulated deconvolved calcium events and is designed to test out RADICaL. Similar to the sample spiking dataset, spike trains are generated by simulating a population of neurons whose firing rates are linked to the state of a Lorenz system. Realistic flurorescence traces are generated from the spike trains and deconvolved to extract calcium events. Importantly, the sampling times for different neurons are staggered to simulate 2p laser scanning sampling times. RADICaL takes in the deconvolved calcium events and outputs inferred event rates. The inferred event rates can then be mapped to the ground truth Lorenz states to give a sense of how effective RADICaL recovers the latent states.</p>
+<p>The synthetic datasets are located in the tutorial package, called <code>lfads_data.h5</code>, <code>lfads_emg_data.h5</code> and <code>lfads_cal_data.h5</code>. If you have not downloaded it yet, you can <a href="../files/tutorial_package.zip">download it here</a>.</p>
+<p>If you would like to use these datasets, you can skip the next section on using your own data, and proceed straight to the 'Uploading data' section in this page.</p>
 <h3 id="using-your-own-neural-population-data">Using your own neural population data</h3>
-<p>If you would like to use your own neuronal population data, the data must be a <code>.mat</code> file with a <code>.spike</code> attribute which contains spiking data in the format <code>neurons x trial-length x number of trials</code>. Furthermore, we suggest using data with a sequence length less than 100 timesteps; while there is not a clear data size limit, larger datasets are more prone to failure when running the python script. Once you have your dadta in a <code>.mat</code> file, you can use the <code>convert_h5.m</code> in the script <a href="../files/tutorial_package.zip">zip file</a> to convert it to the necessary <code>.h5</code> file format in order to upload it to Google Cloud Platform. </p>
+<p>If you would like to use your own neuronal population data, the data must be a <code>.mat</code> file with a <code>.data</code> attribute which contains spiking data in the format <code>neurons x trial-length x number of trials</code>. Furthermore, we suggest using data with a sequence length less than 100 timesteps; while there is not a clear data size limit, larger datasets are more prone to failure when running the python script. Once you have your data in a <code>.mat</code> file, you can use the <code>convert_h5.m</code> in the script <a href="../files/tutorial_package.zip">zip file</a> to convert it to the necessary <code>.h5</code> file format in order to upload it to Google Cloud Platform. </p>
 <p>Simply open up the script, point the <code>data</code> field toward your .mat file and edit the <code>lfads_input_file</code> to point toward where you want the .h5 file to be generated. Optionally, you can also edit the <code>valid_set_ratio</code> variable to use a different amount of the data for validation. Once you have set these variables, you can run the script and it should output the converted .h5 file.  </p>
 <h2 id="uploading-data">Uploading Data</h2>
-<p>Next, navigate back to <a href="https://console.cloud.google.com/storage">console.cloud.google.com/storage</a>, click on the bucket you <a href="../create_bucket">created</a>, and then navigate to your "data" folder. Then, upload your .h5 file here either by clicking upload file or by dragging and dropping. The .h5 file must be renamed to have the prefix specified by the <code>data_file_namestem</code> parameter in the <code>pbt_script_multiVM.py</code> file located in <code>autolfads/pbt_opt</code> directory of the SNEL repo. The default prefix is <code>lfads</code>, thus, in this tutorial we'll upload our data named lfads_data.h5.</p>
+<p>Next, navigate back to <a href="https://console.cloud.google.com/storage">console.cloud.google.com/storage</a>, click on the bucket you <a href="../create_bucket">created</a>, and then navigate to your "data" folder. Then, upload your .h5 file here either by clicking upload file or by dragging and dropping. The .h5 file must be renamed to have the prefix specified by the <code>data_file_namestem</code> parameter in the <code>pbt_script_multiVM.py</code> file located in <code>autolfads/pbt_opt</code> directory of the SNEL repo. The default prefix is <code>lfads</code>, thus, in this tutorial we'll upload our data named lfads_data.h5 (or lfads_emg_data.h5 or lfads_cal_data.h5).</p>
 <p>Our data folder in our bucket should now look like this with the data uploaded.</p>
 <p><img alt="bucket data" src="../img/bucket_data_updated.PNG" />   </p>
 <video width="100%" height="auto" controls loop>
   <source src="../media/autoLFADS/upload_data.mp4" type="video/mp4">
 </video>
-                
-              
-              
-                
-
 
               
             </article>
           </div>
         </div>
+        
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
         
-          <a href="../setupAddInfo/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <a href="../setupAddInfo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Additional Information" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Additional Information
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Additional Information
-              </div>
-            </div>
-          </a>
+          </div>
+        </a>
+      
+      
         
-        
-          <a href="../run_params/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Set-up run parameters
-              </div>
+        <a href="../run_params/" class="md-footer__link md-footer__link--next" aria-label="Next: Set-up run parameters" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Set-up run parameters
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-      </div>
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.092fa1f6.min.js"}</script>
     
-      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
-      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-      
-      <script>
-        app = initialize({
-          base: "..",
-          features: ['navigation.tabs'],
-          search: Object.assign({
-            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="../assets/javascripts/bundle.e3b2bf44.min.js"></script>
       
         <script src="../stylesheets/flowchart_script.js"></script>
       

@@ -8,9 +8,8 @@
       
       
       
-      
-      <link rel="shortcut icon" href="../img/snelogo.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+      <link rel="icon" href="../img/snelogo.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10">
     
     
       
@@ -18,10 +17,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.d6be258b.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
         
           
           
@@ -35,17 +34,18 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
-    
     
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
       <link rel="stylesheet" href="../stylesheets/flowchart_style.css">
     
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+
     
     
   </head>
@@ -57,8 +57,8 @@
     
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="red">
-      
   
+    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -75,26 +75,27 @@
       
     </div>
     
+    
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="AutoLFADS Tutorial" class="md-header-nav__button md-logo" aria-label="AutoLFADS Tutorial">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AutoLFADS Tutorial" class="md-header__button md-logo" aria-label="AutoLFADS Tutorial" data-md-component="logo">
       
   <img src="../img/snelogo.png" alt="logo">
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
           <span class="md-ellipsis">
             AutoLFADS Tutorial
           </span>
         </div>
-        <div class="md-header-nav__topic">
+        <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
               Set-up storage infrastructure
@@ -104,22 +105,27 @@
       </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -136,6 +142,7 @@
     
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -143,6 +150,7 @@
       
         
           
+            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
@@ -207,7 +215,7 @@
   
     <li class="md-tabs__item">
       <a href="../data/" class="md-tabs__link">
-        Run AutoLFADS
+        Run Model
       </a>
     </li>
   
@@ -248,6 +256,7 @@
     </ul>
   </div>
 </nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -255,19 +264,17 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
-
-
 
   
 
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="AutoLFADS Tutorial" class="md-nav__button md-logo" aria-label="AutoLFADS Tutorial">
+    <a href=".." title="AutoLFADS Tutorial" class="md-nav__button md-logo" aria-label="AutoLFADS Tutorial" data-md-component="logo">
       
   <img src="../img/snelogo.png" alt="logo">
 
@@ -281,432 +288,482 @@
       
       
 
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Introduction
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Is This Tutorial For You?
+      </a>
+    </li>
+  
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigate/" class="md-nav__link">
+        Navigating the Tutorial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/" class="md-nav__link">
+        Theory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        Architecture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introductionAddInfo/" class="md-nav__link">
+        Additional Info
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
 
   
-  <li class="md-nav__item md-nav__item--nested">
-    
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" >
-    
-    <label class="md-nav__link" for="nav-1">
-      Introduction
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Introduction" data-md-level="1">
-      <label class="md-nav__title" for="nav-1">
-        <span class="md-nav__icon md-icon"></span>
-        Introduction
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href=".." class="md-nav__link">
-      Is This Tutorial For You?
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../navigate/" class="md-nav__link">
-      Navigating the Tutorial
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../theory/" class="md-nav__link">
-      Theory
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../architecture/" class="md-nav__link">
-      Architecture
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../introductionAddInfo/" class="md-nav__link">
-      Additional Info
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-
   
-  <li class="md-nav__item md-nav__item--nested">
+  
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
-    
-    <label class="md-nav__link" for="nav-2">
-      Quick Start
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Quick Start" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon"></span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Quick Start
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Quick Start" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Quick Start
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flowchart/" class="md-nav__link">
         Quick Start
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../flowchart/" class="md-nav__link">
-      Quick Start
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
+      </a>
+    </li>
   
 
-
-  
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
-    
-    <label class="md-nav__link" for="nav-3">
-      First Time Set-up
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="First Time Set-up" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon"></span>
-        First Time Set-up
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+            
           
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../create_infra/" class="md-nav__link">
-      Set-up virtual machines
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
+        </ul>
+      </nav>
+    </li>
   
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
-      Set-up storage infrastructure
-    </a>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../add_user/" class="md-nav__link">
-      Set-up user
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../setupAddInfo/" class="md-nav__link">
-      Additional Information
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
     
       
       
       
-
-
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  
     
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          First Time Set-up
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="First Time Set-up" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          First Time Set-up
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create_infra/" class="md-nav__link">
+        Set-up virtual machines
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
-    <label class="md-nav__link" for="nav-4">
-      Run AutoLFADS
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Run AutoLFADS" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon"></span>
-        Run AutoLFADS
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
         
-        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Set-up storage infrastructure
+      </a>
+      
+    </li>
+  
+
+            
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../add_user/" class="md-nav__link">
+        Set-up user
+      </a>
+    </li>
+  
+
+            
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setupAddInfo/" class="md-nav__link">
+        Additional Information
+      </a>
+    </li>
+  
+
+            
           
-
-
-
-  <li class="md-nav__item">
-    <a href="../data/" class="md-nav__link">
-      Upload data
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../run_params/" class="md-nav__link">
-      Set-up run parameters
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../run_autoLFADS/" class="md-nav__link">
-      Run AutoLFADS
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../client_tmux/" class="md-nav__link">
-      During run
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../runAddInfo/" class="md-nav__link">
-      Additional Information
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
-
-
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
     
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Run Model
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Run Model" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Run Model
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data/" class="md-nav__link">
+        Upload data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../run_params/" class="md-nav__link">
+        Set-up run parameters
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../run_autoLFADS/" class="md-nav__link">
+        Run Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client_tmux/" class="md-nav__link">
+        During run
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../runAddInfo/" class="md-nav__link">
+        Additional Information
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+      
+      
+      
+
+  
+  
+  
     
-    <label class="md-nav__link" for="nav-5">
-      Analysis
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Analysis" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon"></span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Analysis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Analysis" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Analysis
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analysis/" class="md-nav__link">
         Analysis
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      </a>
+    </li>
+  
+
+            
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../log_files/" class="md-nav__link">
+        Log Files
+      </a>
+    </li>
+  
+
+            
           
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../analysis/" class="md-nav__link">
-      Analysis
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../log_files/" class="md-nav__link">
-      Log Files
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
-
-
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
-    
-    <label class="md-nav__link" for="nav-6">
-      Glossary/Common Errors
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Glossary/Common Errors" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        <span class="md-nav__icon md-icon"></span>
-        Glossary/Common Errors
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Glossary/Common Errors
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Glossary/Common Errors" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Glossary/Common Errors
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parameters/" class="md-nav__link">
+        Glossary of Parameters
+      </a>
+    </li>
+  
+
+            
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common_errors/" class="md-nav__link">
+        Common Errors
+      </a>
+    </li>
+  
+
+            
           
-
-
-
-  <li class="md-nav__item">
-    <a href="../parameters/" class="md-nav__link">
-      Glossary of Parameters
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../common_errors/" class="md-nav__link">
-      Common Errors
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
   </ul>
@@ -717,11 +774,13 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -733,96 +792,87 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                
-                <h1 id="creating-bucket">Creating Bucket</h1>
+
+<h1 id="creating-bucket">Creating Bucket</h1>
 <p>The next step is creating a bucket and adding two directories, one to upload your data to, and one to store checkpoints from your run.</p>
 <p>Navigate to <a href="https://console.cloud.google.com/storage">console.cloud.google.com/storage</a> and click 'Create Bucket.' The location type of the bucket should be "multi-region," the storage class should be "standard," and the access control should be "fine-grained."</p>
 <p>After you have created your bucket, navigate inside your bucket by clicking on it. Inside your bucket, click "create folder" and name it "data." Then create another folder called "runs."</p>
 <video width="100%" height="auto" controls loop>
   <source src="../media/autoLFADS/create_bucket.mp4" type="video/mp4">
 </video>
-                
-              
-              
-                
-
 
               
             </article>
           </div>
         </div>
+        
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
         
-          <a href="../create_infra/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <a href="../create_infra/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Set-up virtual machines" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Set-up virtual machines
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Set-up virtual machines
-              </div>
-            </div>
-          </a>
+          </div>
+        </a>
+      
+      
         
-        
-          <a href="../add_user/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Set-up user
-              </div>
+        <a href="../add_user/" class="md-footer__link md-footer__link--next" aria-label="Next: Set-up user" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Set-up user
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-      </div>
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.092fa1f6.min.js"}</script>
     
-      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
-      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-      
-      <script>
-        app = initialize({
-          base: "..",
-          features: ['navigation.tabs'],
-          search: Object.assign({
-            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="../assets/javascripts/bundle.e3b2bf44.min.js"></script>
       
         <script src="../stylesheets/flowchart_script.js"></script>
       
