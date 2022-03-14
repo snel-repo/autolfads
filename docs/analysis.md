@@ -42,7 +42,7 @@ Run the `pbt_plot.m` script. This script will show the evolution of HPs over suc
 
 If you used the synthetic dataset derived from Lorenz, then we can compare to the true rates.
 
-First, open the `compare_rates.m` script in the tutorial package. Fill in the first `lfads_output_dir` with the address of the `lfads_output` which is located inside your `run` folder. For instance, on my computer its `C:\\Users\tutorial\output\runs\lfads_output`.
+First, open the `spikes/compare_rates.m` script in the tutorial package. Fill in the first `lfads_output_dir` with the address of the `lfads_output` which is located inside your `run` folder. For instance, on my computer its `C:\\Users\tutorial\output\runs\lfads_output`.
 
 Then, you can run the script, which will generate R^2 value, which represents the error in the inferred rates compared to the true rates, as well as plot the inferred rates of several example neurons against their true underlying rates.
 
@@ -59,7 +59,7 @@ The following plot was generated from this tutorial's run.
 
 If you used the locomotion EMG dataset provided in the tutorial package, then we can visualize the output of the AutoLFADS model and also perform a joint angular acceleration decoding analysis similar to what is presented in Wimalasena et al., 2021. 
 
-First, open the `emg_post_analysis.py` script in the tutorial package. 
+First, open the `emg/emg_post_analysis.py` script in the tutorial package. 
 - Change the `data_dir` with the address of the `lfads_input` which is located in your `run` folder 
 - Change the `lfads_output_dir` with the address of the `lfads_output` (also in `run`)
 For instance, on my computer its `C:\\Users\tutorial\output\runs\lfads_output`.
@@ -79,7 +79,7 @@ The following plots will be generated from this script in the tutorial.
 
 If you used the synthetic calcium dataset derived from Lorenz, then we can measure how well RADICaL predicts the true latent states.
 
-First, open the `map_to_latents.m` script in the tutorial package. Fill in the first `lfads_output_dir` with the address of the `lfads_output` which is located inside your `run` folder. For instance, on my computer its `C:\\Users\tutorial\output\runs\lfads_output`.
+First, open the `calcium/map_to_latents.m` script in the tutorial package. Fill in the first `lfads_output_dir` with the address of the `lfads_output` which is located inside your `run` folder. For instance, on my computer its `C:\\Users\tutorial\output\runs\lfads_output`.
 
 Then, you can run the script. RADICaL inferred rates are mapped to the ground truth lorenz states by training a ridge regression. The script will then generate R^2 (coefficient of determination) value, which represents how well the predicted latent states match to the true latent states for the testing trials, as well as plot the predicted latent states of several example conditions against their ground truth latent states.
 
