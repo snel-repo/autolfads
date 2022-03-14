@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../img/snelogo.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.d6be258b.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -32,8 +32,9 @@
     
       
         
+        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -933,6 +934,7 @@
               
                 
 
+
   <h1>Analysis</h1>
 
 <h2 id="overview">Overview</h2>
@@ -966,7 +968,7 @@
 <p>This section is only for users using a synthetic spiking dataset (as in the tutorial_package) where ground truth firing rates are available. </p>
 </div>
 <p>If you used the synthetic dataset derived from Lorenz, then we can compare to the true rates.</p>
-<p>First, open the <code>compare_rates.m</code> script in the tutorial package. Fill in the first <code>lfads_output_dir</code> with the address of the <code>lfads_output</code> which is located inside your <code>run</code> folder. For instance, on my computer its <code>C:\\Users\tutorial\output\runs\lfads_output</code>.</p>
+<p>First, open the <code>spikes/compare_rates.m</code> script in the tutorial package. Fill in the first <code>lfads_output_dir</code> with the address of the <code>lfads_output</code> which is located inside your <code>run</code> folder. For instance, on my computer its <code>C:\\Users\tutorial\output\runs\lfads_output</code>.</p>
 <p>Then, you can run the script, which will generate R^2 value, which represents the error in the inferred rates compared to the true rates, as well as plot the inferred rates of several example neurons against their true underlying rates.</p>
 <p><img alt="d" src="../img/r2_output.PNG" /></p>
 <p>The following plot was generated from this tutorial's run.</p>
@@ -977,21 +979,21 @@
 <p>This section is only for the specific EMG dataset in the tutorial_package </p>
 </div>
 <p>If you used the locomotion EMG dataset provided in the tutorial package, then we can visualize the output of the AutoLFADS model and also perform a joint angular acceleration decoding analysis similar to what is presented in Wimalasena et al., 2021. </p>
-<p>First, open the <code>emg_post_analysis.py</code> script in the tutorial package. 
+<p>First, open the <code>emg/emg_post_analysis.py</code> script in the tutorial package. 
 - Change the <code>data_dir</code> with the address of the <code>lfads_input</code> which is located in your <code>run</code> folder 
 - Change the <code>lfads_output_dir</code> with the address of the <code>lfads_output</code> (also in <code>run</code>)
 For instance, on my computer its <code>C:\\Users\tutorial\output\runs\lfads_output</code>.</p>
 <p>Then you can run the script. AutoLFADS inferred means from the training and validation set used for training will be plotted for 4 example EMG channels. Additionally, an optimal linear estimator will be fit to map the AutoLFADS output onto joint angular accelerations of the hip, knee, and ankle. Cross-validated R^2 calues are included in the title of each subplot. </p>
 <p>The following plots will be generated from this script in the tutorial. </p>
 <p><img alt="img" src="../img/autolfads_emg_output.png" /></p>
-<p><img alt="img" src="img/autolfads_jointacc_predictions.png" /></p>
+<p><img alt="img" src="../img/autolfads_emg_jointacc_predictions.png" /></p>
 <h3 id="calcium-dataset-map-to-true-latent-states">Calcium dataset: map to true latent states</h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This section is only for users using a synthetic calcium dataset (as in the tutorial_package) where ground truth latent states are available. </p>
 </div>
 <p>If you used the synthetic calcium dataset derived from Lorenz, then we can measure how well RADICaL predicts the true latent states.</p>
-<p>First, open the <code>map_to_latents.m</code> script in the tutorial package. Fill in the first <code>lfads_output_dir</code> with the address of the <code>lfads_output</code> which is located inside your <code>run</code> folder. For instance, on my computer its <code>C:\\Users\tutorial\output\runs\lfads_output</code>.</p>
+<p>First, open the <code>calcium/map_to_latents.m</code> script in the tutorial package. Fill in the first <code>lfads_output_dir</code> with the address of the <code>lfads_output</code> which is located inside your <code>run</code> folder. For instance, on my computer its <code>C:\\Users\tutorial\output\runs\lfads_output</code>.</p>
 <p>Then, you can run the script. RADICaL inferred rates are mapped to the ground truth lorenz states by training a ridge regression. The script will then generate R^2 (coefficient of determination) value, which represents how well the predicted latent states match to the true latent states for the testing trials, as well as plot the predicted latent states of several example conditions against their ground truth latent states.</p>
 <p><img alt="d" src="../img/cal_r2_output.PNG" /></p>
 <p>The following plot was generated from this tutorial's run.</p>
@@ -1061,10 +1063,10 @@ For instance, on my computer its <code>C:\\Users\tutorial\output\runs\lfads_outp
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.092fa1f6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.e3b2bf44.min.js"></script>
+      <script src="../assets/javascripts/bundle.467223ff.min.js"></script>
       
         <script src="../stylesheets/flowchart_script.js"></script>
       
