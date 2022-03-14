@@ -68,8 +68,10 @@ Then you can run the script. AutoLFADS inferred means from the training and vali
 
 The following plots will be generated from this script in the tutorial. 
 
-![img](img/autolfads_emg_output.png)
+Below, is a plot of the single-trial inferred muscle activations for four muscles from a trained AutoLFADS model on the tutorial EMG dataset. Output has been split into two columns based on whether the EMG data was included in the training or validation set used during AutoLFADS training. 
+![d](img/autolfads_emg_output.png)
 
+Below, is a plot of the decoded single-trial joint angular acceleration predictions from a trained AutoLFADS model on the tutorial EMG dataset. True behavior is shown in black, predictions overlaid in blue. Cross-validated R^2 value is included in the title.
 ![img](img/autolfads_emg_jointacc_predictions.png)
 
 ###Calcium dataset: map to true latent states
