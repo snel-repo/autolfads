@@ -68,9 +68,9 @@ Then you can run the script. AutoLFADS inferred means from the training and vali
 
 The following plots will be generated from this script in the tutorial. 
 
-![d](img/autolfads_emg_output.png)
+![img](img/autolfads_emg_output.png)
 
-![img](img/autolfads_jointacc_predictions.png)
+![img](img/autolfads_emg_jointacc_predictions.png)
 
 ###Calcium dataset: map to true latent states
 
