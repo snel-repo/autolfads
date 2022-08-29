@@ -14,9 +14,7 @@ The following section details how to set-up cloud infrastructure on GCP.
 1. Set-up user
 
 ##Tutorial package
-This tutorial has a package that contains several scripts and a synthetic dataset useful for this tutorial. Note that depending on your specific needs, not every file in this package needs to be used.
-
-Download the tutorial package [here](files/tutorial_package.zip).
+This tutorial has a package ([link to repo](https://github.com/snel-repo/gcp-tutorial-pack)) that contains several scripts and synthetic datasets useful for this tutorial. Note that depending on your specific needs, not every file in this package needs to be used.
 
 ## Create and configure the google cloud project
 This first step creates your project in Google Cloud Platform. This step only needs to be done once.

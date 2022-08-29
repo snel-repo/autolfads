@@ -15,7 +15,7 @@ To download data from the bucket, navigate back to [https://console.cloud.google
 Click on the newly created zip file, and then click 'Download.' The output of the run should now be downloaded to your local computer.
 
 ##Post Processing 
-Now that you have downloaded the data back to your local computer, open up the tutorial package ([download here](files/tutorial_package.zip))
+Now that you have downloaded the data back to your local computer, open up the [tutorial package](https://github.com/snel-repo/gcp-tutorial-pack).
 
 Open up `pbt_plot.m` in Matlab. First, set the tutorial_package to your current working folder. 
 
